@@ -6,7 +6,7 @@ DUPLA: Laysa Bernardes CB3024873 e Lucas Lopes CB3025284.
 
 Aqui estão os GIFs do projeto:
 
-### GIF 1: TP01Ex02.gif
+### GIF 1: TP01Ex01.gif
 ![GIF 1](TP_01/VIDEOS/TP01Ex01.gif)
 
 ### GIF 2: TP01Ex02.gif
