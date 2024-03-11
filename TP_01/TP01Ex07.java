@@ -1,3 +1,4 @@
+// DUPLA: Laysa Bernardes e Lucas Lopes. 
 // 7. Calcular e exibir a média geométrica de dois valores quaisquer que serão digitados.
 
 import java.util.Scanner;
@@ -9,7 +10,7 @@ public class TP01Ex07 {
         System.out.println("Digite o primeiro valor: ");
         double valor1 = scan.nextDouble();
         //Capturando valor 2
-        System.out.println("Digite o primeiro valor: ");
+        System.out.println("Digite o segundo valor: ");
         double valor2 = scan.nextDouble();
         //Exibindo resultado:
         double mediaGeometrica = Math.sqrt(valor1 * valor2);

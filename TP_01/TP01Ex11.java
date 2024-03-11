@@ -1,3 +1,4 @@
+// DUPLA: Laysa Bernardes e Lucas Lopes. 
 // 11. A partir do diâmetro de um círculo que será digitado, calcular e exibir sua área.
 
 import java.util.Scanner;

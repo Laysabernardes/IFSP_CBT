@@ -1,3 +1,4 @@
+// DUPLA: Laysa Bernardes e Lucas Lopes. 
 // 17. Entrar via teclado com dois valores quaisquer X e Y. Calcular e exibir o cálculo XY (X elevado a Y). Pesquisar as funções Exp e Ln.
 
 import java.util.Scanner;
