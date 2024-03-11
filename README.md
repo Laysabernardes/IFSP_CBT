@@ -7,7 +7,7 @@ DUPLA: Laysa Bernardes e Lucas Lopes.
 Aqui estão os GIFs do projeto:
 
 ### GIF 2: TP01Ex02.gif
-![GIF 2](VIDEOS/TP01Ex02.gif)
+![GIF 2](TP_01/VIDEOS/TP01Ex02.gif)
 
 ### GIF 4: TP01Ex04.gif
 ![GIF 4](VIDEOS/TP01Ex04.gif)
