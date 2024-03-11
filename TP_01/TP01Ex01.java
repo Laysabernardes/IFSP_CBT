@@ -1,8 +1,9 @@
 //1. Entrar via teclado com a base e a altura de um retângulo, calcular e exibir sua área.
+
 import java.util.Scanner;
 public class TP01Ex01 {
     public static void main(String args[]){
-        //Instância que captura objetos. 
+        //Instância que captura o teclado. 
         Scanner scan= new Scanner(System.in); 
         //Capturando num1:
         System.out.println("Digite a altura do seu retangulo: ");
