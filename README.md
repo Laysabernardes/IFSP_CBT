@@ -2,6 +2,7 @@
 ## Integrante
 
 - Laysa Bernardes Campos da Rocha - CB3024873
+-  Lucas Lopes Cruz - CB3025284
 
 Disciplina de Estrutura de Dados I
 
