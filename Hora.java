@@ -1,10 +1,6 @@
-// DUPLA: Laysa Bernardes e Lucas Lopes.
-// Trabalho prático: Construir a classe Hora
-
 import java.util.Scanner;
 
 public class Hora {
-
     Scanner scan = new Scanner(System.in);
 
     private int hora;
@@ -12,68 +8,56 @@ public class Hora {
     private int seg;
 
     public Hora() {
-        System.out.print("Classe Hora: ");
-        // HORAS
-        System.out.print("\nDigite um valor para a(s) hora(s): ");
-        int Hora = scan.nextInt();// Lê o valor digitado pelo usuário e o armazena na variável 'Hora'
-
-        while (Hora < 0 || Hora > 23) // Entra em um loop enquanto a hora digitada for menor que 0 ou maior que 23
-        {
-            System.out.println("Horas inválidas. Por favor, digite novamente. "); // Se a hora digitada for
-                                                                                  // inválida,
-                                                                                  // exibe uma mensagem de erro
-            Hora = scan.nextInt();// Solicita ao usuário que digite novamente e atualiza o valor de 'Hora'
+        System.out.print("Digite as horas: ");
+        int Hora = scan.nextInt();
+        while (Hora < 0 || Hora > 23) {
+            System.out.println("Horas inválidas. Por favor, digite novamente.");
+            System.out.print("Digite as horas: ");
+            Hora = scan.nextInt();
         }
-        this.hora = Hora; // Se a hora digitada estiver dentro do intervalo válido (0 a 23), atribui à
-                          // variável 'hora'
+        this.hora = Hora;
 
         // MINUTOS
-        System.out.print("\nDigite um valor para o(s) minuto(s): ");
-        int Min = scan.nextInt();// Lê o valor digitado pelo usuário e o armazena na variável 'Min'
-
-        while (Min < 0 || Min > 59)// Entra em um loop enquanto o minuto digitado for menor que 0 ou maior que 59
-        {
+        System.out.print("Digite os minutos: ");
+        int Min = scan.nextInt();
+        while (Min < 0 || Min > 59) {
             System.out.println("Minutos inválidos. Por favor, digite novamente:");
+            System.out.print("Digite os minutos: ");
             Min = scan.nextInt();
         }
-        this.min = Min;// Se o minuto digitado estiver dentro do intervalo válido (0 a 59), atribui à
-                       // variável 'min'
+        this.min = Min;
 
         // SEGUNDOS
-        System.out.print("\nDigite um valor para o(s) segundo(s): ");
+        System.out.print("Digite os segundos: ");
         int Seg = scan.nextInt();
-
-        while (Seg < 0 || Seg > 59)// Entra em um loop enquanto o segundo digitado for menor que 0 ou maior que 59
-        {
+        while (Seg < 0 || Seg > 59) {
             System.out.println("Segundos inválidos. Por favor, digite novamente:");
+            System.out.print("Digite os segundos: ");
             Seg = scan.nextInt();
         }
-        this.seg = Seg;// Se o segundo digitado estiver dentro do intervalo válido (0 a 59), atribui à
-                       // variável 'seg'
+        this.seg = Seg;
     }
 
-    // Construtor da classe Hora que recebe três parâmetros: h (hora), m (minuto) e
-    // s (segundo)
+    // Construtor da classe Hora que recebe três parâmetros: h (hora), m (minuto) s
+    // (segundo)
     public Hora(int h, int m, int s) {
-        setHor(h);// método setHor para atribuir a hora passada
-        setMin(m);// método setMin para atribuir o minuto passado
-        setSeg(s);// método setSeg para atribuir o segundo passado
+        setHor(h);
+        setMin(m);
+        setSeg(s);
     }
 
     // Método para definir o valor das horas
     public void setHor(int h) {
-        if (h >= 0 && h < 24)// Verifica se o valor passado está dentro do intervalo válido
-            this.hora = h;// Se estiver dentro do intervalo, atribui o valor à variável
-
+        if (h >= 0 && h < 24)
+            this.hora = h;
         else
             System.out.println("Valor invalido. O valor das horas deve estar entre 0 e 23.");
     }
 
     // Método para definir o valor dos minutos
     public void setMin(int m) {
-        if (m >= 0 && m < 60)// Verifica se o valor passado está dentro do intervalo válido
+        if (m >= 0 && m < 60)
             this.min = m;
-
         else
             System.out.println("Valor invalido. O valor dos minutos deve estar entre 0 e 59.");
     }
@@ -82,57 +66,45 @@ public class Hora {
     public void setSeg(int s) {
         if (s >= 0 && s < 60)
             this.seg = s;
-
         else
             System.out.println("Valor invalido. O valor dos segundos deve estar entre 0 e 59.");
     }
 
     // Método para definir o valor das horas através de entrada do usuário
     public void setHor() {
-        Scanner scan = new Scanner(System.in);// Cria um objeto Scanner para receber entrada do usuário
-
-        System.out.print("Digite um valor para a(s) hora(s): ");
+        System.out.print("Digite as horas: ");
         int horas = scan.nextInt();
-
-        while (horas < 0 || horas > 23)// Entra em um loop enquanto o valor digitado estiver fora do intervalo
-                                       // válido
-        {
+        while (horas < 0 || horas > 23) {
             System.out.print("Entrada inválida. Digite novamente");
+            System.out.print("Digite as horas: ");
             horas = scan.nextInt();
         }
-
         this.hora = horas;
         scan.close();
     }
 
     // Método para definir o valor dos minutos através de entrada do usuário
     public void setMin() {
-        Scanner scan = new Scanner(System.in);
-
-        System.out.print("Digite um valor para o(s) minuto(s): ");
+        System.out.print("Digite os minutos: ");
         int minutos = scan.nextInt();
-
         while (minutos < 0 || minutos > 59) {
             System.out.print("Valor invalido. Digite novamente");
+            System.out.print("Digite os minutos: ");
             minutos = scan.nextInt();
         }
-
         this.min = minutos;
         scan.close();
     }
 
     // Método para definir o valor dos segundos através de entrada do usuário
     public void setSeg() {
-        Scanner scan = new Scanner(System.in);
-
-        System.out.print("Digite o(s) segundo(s): ");
+        System.out.print("Digite os segundos: ");
         int segundos = scan.nextInt();
-
         while (segundos < 0 || segundos > 59) {
             System.out.print("Valor inválido. Digite novamente");
+            System.out.print("Digite os segundos: ");
             segundos = scan.nextInt();
         }
-
         this.seg = segundos;
         scan.close();
     }
@@ -154,37 +126,24 @@ public class Hora {
 
     // Método para obter a hora no formato HH:MM:SS (24 horas)
     public String getHora1() {
-        // Retorna a hora formatada com duas casas decimais para horas, minutos e
-        // segundos
         return String.format("%02d:%02d:%02d", hora, min, seg);
     }
 
     // Método para obter a hora no formato HH:MM:SS AM/PM (12 horas)
     public String getHora2() {
-        // Determina se é AM ou PM com base na hora
         String periodo = (hora < 12) ? "AM" : "PM";
-
-        // Converte a hora para o formato de 12 horas
         int hora12 = (hora < 12) ? hora : hora - 12;
-
-        // Se a hora for 0 (meia-noite), converte para 12 horas
         if (hora12 == 0)
             hora12 = 12;
-
-        // Retorna a hora formatada com duas casas decimais para horas, minutos,
-        // segundos e período (AM/PM)
         return String.format("%02d:%02d:%02d %s", hora12, min, seg, periodo);
     }
 
     // Método para obter o total de segundos desde a meia-noite
     public int getSegundos() {
-        // Calcula o total de segundos somando horas * 3600, minutos * 60 e segundos
         return hora * 3600 + min * 60 + seg;
     }
 
-    //ADICIONADO 
     public String mostra() {
         return String.format("%02d:%02d:%02d", this.hora, this.min, this.seg);
     }
-
 }

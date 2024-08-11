@@ -36,7 +36,7 @@ class Data {
         if (m >= 1 && m <= 12) {
             this.mes = m;
             if (!isValidDate(this.dia, m, this.ano)) {
-                this.dia = 1; // Ajusta o dia para um valor válido se o mês mudar e a data não for mais válida
+                this.dia = 1; 
             }
         } else {
             throw new IllegalArgumentException("Mês inválido!");
@@ -47,7 +47,7 @@ class Data {
         if (a > 0) {
             this.ano = a;
             if (!isValidDate(this.dia, this.mes, a)) {
-                this.dia = 1; // Ajusta o dia para um valor válido se o ano mudar e a data não for mais válida
+                this.dia = 1; 
             }
         } else {
             throw new IllegalArgumentException("Ano inválido!");
