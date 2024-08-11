@@ -4,6 +4,9 @@ Desenvolvido por:
 - Laysa Bernardes Campos da Rocha - CB3024873
 - Lucas Lopes Cruz - CB3025284
 
+#
+- ![Gif do Projeto](./TesteConsultaAgendada.java.gif)
+
 ## Exercício 1:
 Reescreva as propriedades e métodos da classe Data, deixando-os de acordo com
 o padrão UML (Getter e Setter).
@@ -63,10 +66,10 @@ construtor ConsultaAgendada (int h, int mi, int s, int d, int m, int a, String p
 ## Exercício 04
 - Escreva todo o resultado obtido no exercício 3 em um arquivo texto.
 
-# Ver o Resultado: 
+## Ver o Resultado: 
 - [Assista ao vídeo testando o programa - Youtube ](https://youtu.be/8F_Ef4oW6mE)
 - [Transcrição do Resultado Obtido](./transcricao.txt)
-- ![Gif do Projeto](./TesteConsultaAgendada.java.gif)
+
 
 
 
