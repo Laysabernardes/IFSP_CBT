@@ -1,0 +1,58 @@
+----------------------------------------------------
+----------- Propriedades de p1  --------------------
+Data: 12/08/2024
+Hora: 10:30:00
+Nome do Paciente: João Silva
+Nome do Médico: Dr. Carlos
+Quantidade de consultas agendadas: 1
+----------------------------------------------------
+
+Digite o ano: 2024
+Digite o mês: 99
+Erro ao entrar com o mês: Mês inválido!
+Digite o mês: 9
+Digite o dia: 66
+Erro ao entrar com o dia: Dia inválido!
+Digite o dia: 25
+Digite as horas: 99
+Horas inválidas. Por favor, digite novamente.
+Digite as horas: 20
+Digite os minutos: 66
+Minutos inválidos. Por favor, digite novamente:
+Digite os minutos: 30
+Digite os segundos: 99
+Segundos inválidos. Por favor, digite novamente:
+Digite os segundos: 15
+Digite o nome do paciente: João Carlos
+Digite o nome do médico: Pedro Carlos
+----------------------------------------------------
+----------- Propriedades de p2  --------------------
+Data: 25/09/2024
+Hora: 20:30:15
+Nome do Paciente: JoÆo Carlos
+Nome do Médico: Pedro Carlos
+Quantidade de consultas agendadas: 2
+----------------------------------------------------
+
+----------------------------------------------------
+----------- Alterando dados de p1 ------------------
+Digite o ano: 2024
+Digite o mês: 6
+Digite o dia: 3
+Digite as horas: 22
+Digite os minutos: 59
+Digite os segundos: 55
+Digite o nome do paciente: Pedro
+Digite o nome do médico: Carlos
+----------------------------------------------------
+------- Propriedades de p1 após alterações ---------
+Data: 03/06/2024
+Hora: 22:59:55
+Nome do Paciente: Pedro
+Nome do Médico: Carlos
+Quantidade de consultas agendadas: 2
+
+----------- Consultas Agendadas --------------------
+Quantidade final de consultas agendadas: 2
+----------------------------------------------------
+
