@@ -1,29 +1,29 @@
 # ProjetoBilheteria
 
-Este projeto implementa um sistema de controle de ocupaÁ„o para um teatro com 600 lugares, dispostos em 15 fileiras com 40 poltronas cada. O sistema permite reservar poltronas, visualizar um mapa de ocupaÁ„o e calcular o faturamento total com base nas reservas realizadas.
+Este projeto implementa um sistema de controle de ocupa√ß√£o para um teatro com 600 lugares, dispostos em 15 fileiras com 40 poltronas cada. O sistema permite reservar poltronas, visualizar um mapa de ocupa√ß√£o e calcular o faturamento total com base nas reservas realizadas.
 
 ## Funcionalidades
 
 1. **Reservar Poltrona**:
-   - O sistema solicita a fileira e o n˙mero da poltrona.
-   - Verifica se o lugar est· vago e, em caso afirmativo, realiza a reserva e informa o usu·rio.
-   - Caso o lugar j· esteja ocupado, uma mensagem de alerta È exibida.
-   - As reservas s„o salvas em um arquivo de texto (`estadoPoltronas.txt`) para persistÍncia dos dados.
+   - O sistema solicita a fileira e o n√∫mero da poltrona.
+   - Verifica se o lugar est√° vago e, em caso afirmativo, realiza a reserva e informa o usu√°rio.
+   - Caso o lugar j√° esteja ocupado, uma mensagem de alerta √© exibida.
+   - As reservas s√£o salvas em um arquivo de texto (`estadoPoltronas.txt`) para persist√™ncia dos dados.
 
-2. **Mapa de OcupaÁ„o**:
-   - Exibe na tela um mapa com a ocupaÁ„o do teatro, onde:
+2. **Mapa de Ocupa√ß√£o**:
+   - Exibe na tela um mapa com a ocupa√ß√£o do teatro, onde:
      - `.` representa lugar vago.
      - `#` representa lugar ocupado.
 
 3. **Faturamento**:
-   - Apresenta a quantidade de lugares ocupados e o valor total da bilheteria, com preÁos diferenciados por fileira:
+   - Apresenta a quantidade de lugares ocupados e o valor total da bilheteria, com pre√ßos diferenciados por fileira:
      - Fileiras 1 a 5: R$ 50,00
      - Fileiras 6 a 10: R$ 30,00
      - Fileiras 11 a 15: R$ 15,00
 
 4. **Salvar Reservas**:
-   - Todas as reservas realizadas s„o salvas em um arquivo de texto (`estadoPoltronas.txt`), permitindo que o sistema recupere as ocupaÁıes salvas ao ser reaberto.
+   - Todas as reservas realizadas s√£o salvas em um arquivo de texto (`estadoPoltronas.txt`), permitindo que o sistema recupere as ocupa√ß√µes salvas ao ser reaberto.
 
-#Programa Funcionando:
+# Programa Funcionando:
 
 ![Gif do projeto](./bilheteria.gif)
