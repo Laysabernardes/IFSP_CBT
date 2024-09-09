@@ -1,12 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
 using System.IO;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace ProjetoBilheteria
@@ -22,6 +17,8 @@ namespace ProjetoBilheteria
         private TextBox txtColuna;
         private Button btnReservar;
 
+        private Panel panelOperacoes;
+
         private const int fileiras = 15;
         private const int qtdPoltronas = 40;
         private double valorFileira_1a5 = 50.00;
@@ -29,26 +26,28 @@ namespace ProjetoBilheteria
         private double valorFileira_11a15 = 15.00;
 
         private bool[,] poltronas = new bool[fileiras, qtdPoltronas];
+        private string arquivoEstado = "estadoPoltronas.txt";
 
         public Form1()
         {
             InitializeComponent();
             InitializeMyComponents();
+            CarregarReservas();
         }
 
         private void InitializeMyComponents()
         {
             lblTexto = new Label
             {
-                Text = "Selecione uma opção:",
-                Location = new System.Drawing.Point(10, 10),
-                Size = new System.Drawing.Size(120, 20)
+                Text = "Bem-vindo ao Cinema. Selecione uma operação que deseja realizar:",
+                Location = new Point(10, 10),
+                Size = new Size(500, 20)
             };
 
             comboBoxMenu = new ComboBox
             {
-                Location = new System.Drawing.Point(10, 40),
-                Size = new System.Drawing.Size(150, 20)
+                Location = new Point(10, 40),
+                Size = new Size(150, 20)
             };
             comboBoxMenu.Items.AddRange(new object[]
             {
@@ -59,12 +58,22 @@ namespace ProjetoBilheteria
             });
             comboBoxMenu.SelectedIndexChanged += ComboBoxMenu_SelectedIndexChanged;
 
+            panelOperacoes = new Panel
+            {
+                Location = new Point(10, 80),
+                Size = new Size(300, 400)
+            };
+
             this.Controls.Add(lblTexto);
             this.Controls.Add(comboBoxMenu);
+            this.Controls.Add(panelOperacoes);
         }
 
         private void ComboBoxMenu_SelectedIndexChanged(object sender, EventArgs e)
         {
+            // Limpa o painel de operações para evitar sobreposição de controles
+            panelOperacoes.Controls.Clear();
+
             switch (comboBoxMenu.SelectedItem.ToString())
             {
                 case "0 - Finalizar":
@@ -83,6 +92,10 @@ namespace ProjetoBilheteria
                 case "3 - Faturamento":
                     ExibirFaturamento();
                     break;
+
+                default:
+                    MessageBox.Show("Seleção inválida. Escolha uma operação válida.");
+                    break;
             }
         }
 
@@ -92,38 +105,38 @@ namespace ProjetoBilheteria
             lblFileira = new Label
             {
                 Text = "Fileira (1-15):",
-                Location = new System.Drawing.Point(10, 80),
-                Size = new System.Drawing.Size(100, 20)
+                Location = new Point(10, 80),
+                Size = new Size(100, 20)
             };
             txtFileira = new TextBox
             {
-                Location = new System.Drawing.Point(120, 80),
-                Size = new System.Drawing.Size(50, 20)
+                Location = new Point(120, 80),
+                Size = new Size(50, 20)
             };
             lblColuna = new Label
             {
                 Text = "Coluna (1-40):",
-                Location = new System.Drawing.Point(10, 110),
-                Size = new System.Drawing.Size(100, 20)
+                Location = new Point(10, 110),
+                Size = new Size(100, 20)
             };
             txtColuna = new TextBox
             {
-                Location = new System.Drawing.Point(120, 110),
-                Size = new System.Drawing.Size(50, 20)
+                Location = new Point(120, 110),
+                Size = new Size(50, 20)
             };
             btnReservar = new Button
             {
                 Text = "Reservar",
-                Location = new System.Drawing.Point(10, 140),
-                Size = new System.Drawing.Size(75, 30)
+                Location = new Point(10, 140),
+                Size = new Size(75, 30)
             };
             btnReservar.Click += BtnReservar_Click;
 
-            this.Controls.Add(lblFileira);
-            this.Controls.Add(txtFileira);
-            this.Controls.Add(lblColuna);
-            this.Controls.Add(txtColuna);
-            this.Controls.Add(btnReservar);
+            panelOperacoes.Controls.Add(lblFileira);
+            panelOperacoes.Controls.Add(txtFileira);
+            panelOperacoes.Controls.Add(lblColuna);
+            panelOperacoes.Controls.Add(txtColuna);
+            panelOperacoes.Controls.Add(btnReservar);
         }
 
         private void BtnReservar_Click(object sender, EventArgs e)
@@ -139,6 +152,13 @@ namespace ProjetoBilheteria
                     {
                         poltronas[indiceFileira, indiceColuna] = true;
                         MessageBox.Show("Poltrona reservada com sucesso!");
+
+                        // Limpar os campos de texto
+                        txtFileira.Clear();
+                        txtColuna.Clear();
+
+                        // Salvar a poltrona reservada no arquivo
+                        SalvarReserva(fileira, coluna);
                     }
                     else
                     {
@@ -159,15 +179,21 @@ namespace ProjetoBilheteria
         private void ExibirMapaOcupacao()
         {
             string mapaOcupacao = "";
+            int totalPoltronas = fileiras * qtdPoltronas;
+            int poltronasOcupadas = 0;
 
             for (int i = 0; i < fileiras; i++)
             {
                 for (int j = 0; j < qtdPoltronas; j++)
                 {
-                    mapaOcupacao += poltronas[i, j] ? "#" : ".";
+                    mapaOcupacao += poltronas[i, j] ? "# " : ". ";
+                    if (poltronas[i, j]) poltronasOcupadas++;
                 }
                 mapaOcupacao += Environment.NewLine;
             }
+
+            double porcentagemOcupacao = (double)poltronasOcupadas / totalPoltronas * 100;
+            mapaOcupacao += $"Porcentagem de ocupação: {porcentagemOcupacao:F2}%";
 
             MessageBox.Show(mapaOcupacao, "Mapa de Ocupação");
         }
@@ -192,6 +218,39 @@ namespace ProjetoBilheteria
             }
 
             MessageBox.Show($"Qtde de lugares ocupados: {totalOcupados}\nValor da bilheteira: R$ {totalFaturamento:F2}", "Faturamento");
+        }
+
+        private void SalvarReserva(int fileira, int coluna)
+        {
+            using (StreamWriter sw = new StreamWriter(arquivoEstado, true))
+            {
+                sw.WriteLine($"Fileira: {fileira}, Coluna: {coluna}");
+            }
+        }
+
+        private void CarregarReservas()
+        {
+            if (File.Exists(arquivoEstado))
+            {
+                using (StreamReader sr = new StreamReader(arquivoEstado))
+                {
+                    string linha;
+                    while ((linha = sr.ReadLine()) != null)
+                    {
+                        string[] partes = linha.Split(new[] { ' ', ':', ',' }, StringSplitOptions.RemoveEmptyEntries);
+                        if (partes.Length == 4)
+                        {
+                            if (int.TryParse(partes[1], out int fileira) && int.TryParse(partes[3], out int coluna))
+                            {
+                                if (fileira >= 1 && fileira <= fileiras && coluna >= 1 && coluna <= qtdPoltronas)
+                                {
+                                    poltronas[fileira - 1, coluna - 1] = true;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }
