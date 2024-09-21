@@ -1,3 +1,6 @@
+**Aluna:** Laysa Bernardes Campos da Rocha  
+**Matrícula:** CB3024873 
+
 # Sistema de Gerenciamento de Vendedores
 
 ## Descrição do Projeto
