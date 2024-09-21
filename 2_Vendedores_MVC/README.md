@@ -4,6 +4,10 @@
 
 Este projeto implementa um sistema para gerenciar uma equipe de vendedores em uma empresa. A aplicação permite registrar e consultar informações sobre os vendedores e suas vendas, limitando o cadastro a um máximo de 10 vendedores.
 
+# Programa Funcionando:
+
+![Gif do projeto](./Vendedores.gif)
+
 ## Diagrama de Classes
 
 ### Classe Venda
@@ -79,6 +83,4 @@ O sistema oferece as seguintes opções:
   - Valor da comissão devida
   Ao final, exibe a totalização dos valores.
 
-# Programa Funcionando:
 
-![Gif do projeto](./Vendedores.gif)

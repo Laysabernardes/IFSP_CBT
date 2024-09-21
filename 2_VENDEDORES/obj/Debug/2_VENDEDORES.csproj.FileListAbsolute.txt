@@ -1,2 +1,0 @@
-C:\Users\laysa\Documents\ADS - 4º SEMESTRE\ED2\2_VENDEDORES\obj\Debug\2_VENDEDORES.csproj.AssemblyReference.cache
-C:\Users\laysa\Documents\ADS - 4º SEMESTRE\ED2\2_VENDEDORES\obj\Debug\2_VENDEDORES.csproj.CoreCompileInputs.cache
