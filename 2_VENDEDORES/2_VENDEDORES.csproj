@@ -45,6 +45,9 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Venda.cs" />
+    <Compile Include="Vendedor.cs" />
+    <Compile Include="Vendedores.cs" /> 
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

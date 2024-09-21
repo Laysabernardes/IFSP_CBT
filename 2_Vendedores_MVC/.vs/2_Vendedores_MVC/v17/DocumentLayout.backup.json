@@ -1,0 +1,104 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\laysa\\Documents\\ADS - 4\u00BA SEMESTRE\\ED2\\2_Vendedores_MVC\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{59B72A50-AB61-4738-8A04-7BA2294560AB}|2_Vendedores_MVC.csproj|c:\\users\\laysa\\documents\\ads - 4\u00BA semestre\\ed2\\2_vendedores_mvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59B72A50-AB61-4738-8A04-7BA2294560AB}|2_Vendedores_MVC.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59B72A50-AB61-4738-8A04-7BA2294560AB}|2_Vendedores_MVC.csproj|c:\\users\\laysa\\documents\\ads - 4\u00BA semestre\\ed2\\2_vendedores_mvc\\vendedores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59B72A50-AB61-4738-8A04-7BA2294560AB}|2_Vendedores_MVC.csproj|solutionrelative:vendedores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59B72A50-AB61-4738-8A04-7BA2294560AB}|2_Vendedores_MVC.csproj|c:\\users\\laysa\\documents\\ads - 4\u00BA semestre\\ed2\\2_vendedores_mvc\\vendedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59B72A50-AB61-4738-8A04-7BA2294560AB}|2_Vendedores_MVC.csproj|solutionrelative:vendedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59B72A50-AB61-4738-8A04-7BA2294560AB}|2_Vendedores_MVC.csproj|c:\\users\\laysa\\documents\\ads - 4\u00BA semestre\\ed2\\2_vendedores_mvc\\venda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59B72A50-AB61-4738-8A04-7BA2294560AB}|2_Vendedores_MVC.csproj|solutionrelative:venda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Vendedor.cs",
+              "DocumentMoniker": "C:\\Users\\laysa\\Documents\\ADS - 4\u00BA SEMESTRE\\ED2\\2_Vendedores_MVC\\Vendedor.cs",
+              "RelativeDocumentMoniker": "Vendedor.cs",
+              "ToolTip": "C:\\Users\\laysa\\Documents\\ADS - 4\u00BA SEMESTRE\\ED2\\2_Vendedores_MVC\\Vendedor.cs",
+              "RelativeToolTip": "Vendedor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC0AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-21T14:56:33.373Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Vendedores.cs",
+              "DocumentMoniker": "C:\\Users\\laysa\\Documents\\ADS - 4\u00BA SEMESTRE\\ED2\\2_Vendedores_MVC\\Vendedores.cs",
+              "RelativeDocumentMoniker": "Vendedores.cs",
+              "ToolTip": "C:\\Users\\laysa\\Documents\\ADS - 4\u00BA SEMESTRE\\ED2\\2_Vendedores_MVC\\Vendedores.cs",
+              "RelativeToolTip": "Vendedores.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAIwEgAAADHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-21T14:54:12.628Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Venda.cs",
+              "DocumentMoniker": "C:\\Users\\laysa\\Documents\\ADS - 4\u00BA SEMESTRE\\ED2\\2_Vendedores_MVC\\Venda.cs",
+              "RelativeDocumentMoniker": "Venda.cs",
+              "ToolTip": "C:\\Users\\laysa\\Documents\\ADS - 4\u00BA SEMESTRE\\ED2\\2_Vendedores_MVC\\Venda.cs",
+              "RelativeToolTip": "Venda.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAIwBAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-21T14:53:09.494Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\laysa\\Documents\\ADS - 4\u00BA SEMESTRE\\ED2\\2_Vendedores_MVC\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\laysa\\Documents\\ADS - 4\u00BA SEMESTRE\\ED2\\2_Vendedores_MVC\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-21T14:50:37.312Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
