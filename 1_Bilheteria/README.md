@@ -1,3 +1,6 @@
+**Aluna:** Laysa Bernardes Campos da Rocha  
+**Matrícula:** CB3024873 
+
 # ProjetoBilheteria
 
 Este projeto implementa um sistema de controle de ocupação para um teatro com 600 lugares, dispostos em 15 fileiras com 40 poltronas cada. O sistema permite reservar poltronas, visualizar um mapa de ocupação e calcular o faturamento total com base nas reservas realizadas.
