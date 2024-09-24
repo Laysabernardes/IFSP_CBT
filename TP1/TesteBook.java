@@ -1,5 +1,4 @@
-
-
+package TP1;
 public class TesteBook {
 	public static void main(String[] args) {
 		// Crie e aloque o array de autores
