@@ -1,8 +1,10 @@
 # Repositórios dos Projetos Práticos desenvolvidos em Linguagem de Programação II
 
-**Aluna:** Laysa Bernardes Campos da Rocha - CB3024873 
+**Aluna:** Laysa Bernardes Campos da Rocha - CB3024873  
 **Aluno:** Lucas Lopes Cruz - CB3025284 
+
 **Professor:**  Me. Wellington Tuler.
+
 
 | Trabalho Prático | Pasta    | URL no GitHub                                                      |  Data da Entrega | 
 |------------------|----------|--------------------------------------------------------------------|------------------|
