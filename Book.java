@@ -38,7 +38,7 @@ public class Book {
     }
 
     //O método toString() deve retornar a seguinte resposta: "Book[name=?,authors={Author[name=?,email=?,gender=?],......},price=?,qty=?]".
-    
+
     public String toString(){
         String authorsString = "";
         for (Author author : authors) {
