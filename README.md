@@ -1,4 +1,4 @@
-# Repositórios dos Projetos Práticos desenvolvidos em Linguagem de Programação II
+# Repositórios dos Trabalhos Práticos desenvolvidos em Linguagem de Programação II
 
 **Aluna:** Laysa Bernardes Campos da Rocha - CB3024873  
 **Aluno:** Lucas Lopes Cruz - CB3025284 
