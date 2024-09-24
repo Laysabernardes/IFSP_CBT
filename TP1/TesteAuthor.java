@@ -1,6 +1,3 @@
-package TP1.bin;
-import TP1.Author;
-
 public class TesteAuthor {
 	public static void main(String[] args) {
 		// Testando o construtor
