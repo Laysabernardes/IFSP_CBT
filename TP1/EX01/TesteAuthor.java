@@ -1,3 +1,4 @@
+package EX01;
 public class TesteAuthor {
 	public static void main(String[] args) {
 		// Testando o construtor

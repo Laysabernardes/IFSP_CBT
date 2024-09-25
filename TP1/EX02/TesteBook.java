@@ -1,3 +1,6 @@
+package EX02;
+import EX01.Author;
+
 public class TesteBook {
 	public static void main(String[] args) {
 		// Crie e aloque o array de autores

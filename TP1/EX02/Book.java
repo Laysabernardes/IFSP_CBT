@@ -1,3 +1,6 @@
+package EX02;
+import EX01.Author;
+
 public class Book {
     private String name;
     private Author[] authors;
