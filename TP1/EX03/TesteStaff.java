@@ -1,4 +1,4 @@
-package IFSP_4_LPR2.TP1.EX03;
+package EX03;
 public class TesteStaff{
     public static void main(String[] args) {
         Staff professor = new Staff("Laysa", "Cubatão - SP", "IFSP Cubatão", 5000.00);

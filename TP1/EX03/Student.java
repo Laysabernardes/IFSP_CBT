@@ -1,4 +1,4 @@
-package IFSP_4_LPR2.TP1.EX03;
+package EX03;
 public class Student extends Person {
     public String program;
     public int year;

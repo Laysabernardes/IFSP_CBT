@@ -1,4 +1,4 @@
-package IFSP_4_LPR2.TP1.EX03;
+package EX03;
 public class Person {
     protected String name;
     protected String address;
