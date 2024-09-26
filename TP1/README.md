@@ -2,7 +2,10 @@
 # TRABALHO PRÁTICO 01 
 
 **Aluna:** Laysa Bernardes Campos da Rocha - CB3024873 
+
 **Aluno:** Lucas Lopes Cruz - CB3025284 
+
+Obs: Os vídeos demonstrando o funcionamento da aplicação estão listados abaixo.
 
 ## Exercício 01
 Uma classe chamada Author é desenhada para servir de modelo para autores de livros, veja abaixo:
@@ -24,7 +27,6 @@ Uma classe chamada Author é desenhada para servir de modelo para autores de liv
 ---------------------------------------------------
 ```
 ### Informações:
-
 - 3 atributos privados name (String), email (String), and gender (char contendo 'm' or 'f');
 - Um construtor para inicializar os atributos com base nos 3 parâmetros.
 - Não existe um construtor default para Author [Author()].
