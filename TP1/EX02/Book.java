@@ -14,6 +14,13 @@ public class Book {
         this.qty = qty;
     }
 
+    // Construtor sem a quantidade (qty)
+    public Book(String name, Author[] authors, double price){
+        this.name = name;
+        this.authors = authors;
+        this.price = price;
+    }
+
     //getters
     public String getName(){
         return name;
@@ -40,14 +47,29 @@ public class Book {
         this.qty = qty;
     }
 
-    //O método toString() deve retornar a seguinte resposta: "Book[name=?,authors={Author[name=?,email=?,gender=?],......},price=?,qty=?]".
-
-    public String toString(){
-        String authorsString = "";
-        for (Author author : authors) {
-            authorsString += author.toString() + ",";
+    public String getAuthorNames(){
+        StringBuilder authorsString = new StringBuilder();
+        for (int i = 0; i < authors.length; i++) {
+            authorsString.append(authors[i].getName());
+            if (i < authors.length - 1) {
+                authorsString.append(", ");
+            }
         }
-        return "Book[name=" + name + ",authors={" + authorsString + "},price=" + price + ",qty=" + qty + "]";
+        return authorsString.toString();
+    }
+
+    @Override
+    public String toString(){
+        StringBuilder authorsString = new StringBuilder();
+        for (int i = 0; i < authors.length; i++) {
+            authorsString.append("Author[name=" + authors[i].getName() 
+                + ",email=" + authors[i].getEmail() 
+                + ",gender=" + authors[i].getGender() + "]");
+            if (i < authors.length - 1) {
+                authorsString.append(", ");
+            }
+        }
+        return "Book[name=" + name + ",authors={" + authorsString.toString() + "},price=" + price + ",qty=" + qty + "]";
     }
 
 }
