@@ -63,13 +63,13 @@ O PROJETO PODERÁ SER DESENVOLVIDO EM C# CONSOLE APPLICATION ou WINDOWS FORMS AP
 EM QUALQUER DAS OPÇÕES, DEVERÁ OFERECER AS SEGUINTES OPÇÕES PARA O USUÁRIO 
 (ADAPTANDO LOGICAMENTE PARA A INTERFACE ESCOLHIDA)
 
---------------------------------------
-| 0. Sair                            |
-| 1. Adicionar contato               |
-| 2. Pesquisar contato               |
-| 3. Alterar contato                 |
-| 4. Remover contato                 |
-| 5. Listar contatos                 |
---------------------------------------
 
-.
+ 0. Sair                           
+ 1. Adicionar contato               
+ 2. Pesquisar contato               
+ 3. Alterar contato                 
+ 4. Remover contato               
+ 5. Listar contatos                 
+
+
+
