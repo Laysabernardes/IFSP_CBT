@@ -1,3 +1,6 @@
+//Aluna: Laysa Bernardes Campos da Rocha - CB3024873 
+//Aluno: Lucas Lopes Cruz - CB3025284 
+
 package EX02;
 import EX01.Author;
 
@@ -13,9 +16,7 @@ public class TesteBook {
 
         // Testando o método toString do Book
         System.out.println(testeBook);
-        // Saída esperada:
-        // Book[name=Java for Dummy,authors={Author[name=Autor 01,email=autor01@somewhere.com.br,gender=m], Author[name=Autor 02,email=autor02@nowhere.com.br,gender=f]},price=19.99,qty=99]
-
+       
         // Testando os Getters do Book
         System.out.println("Nome do livro: " + testeBook.getName());
         System.out.println("Preco: " + testeBook.getPrice());
@@ -32,7 +33,7 @@ public class TesteBook {
 
         // Testando o método getAuthorNames() do Book
         System.out.println("Nomes dos autores: " + testeBook.getAuthorNames());
-        // Saída esperada: Autor 01, Autor 02
+      
 
         // Testando os Setters do Book
         testeBook.setPrice(29.99);
@@ -42,7 +43,7 @@ public class TesteBook {
 
         // Testando o método toString do Author individualmente
         for (Author author : testeBook.getAuthors()) {
-            System.out.println(author); // Saída esperada: Author[name=Autor 01,email=autor01@somewhere.com.br,gender=m], etc.
+            System.out.println(author); 
         }
     }
 }

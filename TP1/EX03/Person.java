@@ -1,3 +1,6 @@
+//Aluna: Laysa Bernardes Campos da Rocha - CB3024873 
+//Aluno: Lucas Lopes Cruz - CB3025284 
+
 package EX03;
 public class Person {
     protected String name;

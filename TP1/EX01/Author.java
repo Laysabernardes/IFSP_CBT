@@ -1,3 +1,6 @@
+//Aluna: Laysa Bernardes Campos da Rocha - CB3024873 
+//Aluno: Lucas Lopes Cruz - CB3025284 
+
 package EX01;
 public class Author{
     //3 atributos privados name (String), email (String), and gender (char contendo 'm' or 'f'); 
