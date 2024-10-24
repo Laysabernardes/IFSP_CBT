@@ -1,6 +1,3 @@
-//Aluna: Laysa Bernardes Campos da Rocha - CB3024873 
-//Aluno: Lucas Lopes Cruz - CB3025284 
-
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
@@ -11,6 +8,7 @@ public class Tela extends JFrame {
     private JTextField nomeField;
     private JTextField idadeField;
     private JTextField enderecoField;
+
     private List<Aluno> alunos;
 
     public Tela() {
@@ -29,7 +27,7 @@ public class Tela extends JFrame {
         nomeField = new JTextField(15);
         JLabel idadeLabel = new JLabel("Idade:");
         idadeField = new JTextField(15);
-        JLabel enderecoLabel = new JLabel("Endereço:");
+        JLabel enderecoLabel = new JLabel("Endereco:");
         enderecoField = new JTextField(15);
 
         painelSuperior.add(nomeLabel);
@@ -90,6 +88,10 @@ public class Tela extends JFrame {
                 }
                 JOptionPane.showMessageDialog(Tela.this, mensagem.toString());
             }
+        });
+
+        sairButton.addActionListener(e -> {
+            System.exit(0);
         });
     }
 
