@@ -1,4 +1,4 @@
-# TRABALHO PRÁTICO 02 - Sistema de Cadastro de Alunos
+# TRABALHO PRÁTICO 03 
 
 **Aluna:** Laysa Bernardes Campos da Rocha - CB3024873 
 
