@@ -4,7 +4,7 @@
 
 **Aluno:** Lucas Lopes Cruz - CB3025284 
 
-Obs: O vídeo demonstrando o funcionamento da aplicação esta listado abaixo.
+Obs: Os vídeos demonstrando o funcionamento da aplicação estão listados abaixo.
 
 ---
 
@@ -14,6 +14,8 @@ Construir o Form abaixo e possibilitar o cálculo das operações de divisão, m
 #### Obs.:
 - O botão C = Clear e limpa a memória da calculadora e também zera o text field de resultado.
 - Colocar tratamento de erros (try, catch, finally)
+
+![Calculadora](src/calculadora.gif)
 
 ---
 
@@ -45,12 +47,18 @@ Classe Pessoa
   - Quando se pressionar o botão “OK” os dados digitados deverão ser transferidos ao objeto “UmaPessoa”, uma instância da classe Pessoa.
   - Quando se pressionar o botão “Mostrar” descarregar os dados do objeto “UmaPessoa” inclusive o contador “kp”.
 
+![Form Pessoa](src/formpessoa.gif)
+
 ---
 
 ### Versão 02 da Classe Pessoa
 Refaça o exercício anterior, porém agora o sexo não deve ser digitado através de um TextField e sim escolhido através de um componente do tipo “JComboBox”.
 
+![Form2](src/form2.gif)
+
 ---
 
 ### Versão 03 da Classe Pessoa
 Refaça o exercício anterior, porém agora usando um componente do tipo “JRadioButton”.
+
+![Form3](src/form3.gif)
