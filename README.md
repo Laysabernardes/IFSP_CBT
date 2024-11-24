@@ -11,5 +11,5 @@
 | Cursos - MVC       | `./3_Cursos_MVC`    | [Repositório Cursos](https://github.com/Laysabernardes/IFSP_4_EDD2/tree/master/3_Cursos_MVC)         | 09/09/2024              | 23/09/2024      |    Console         |
 | Contato            | `./4_Contato`       | [Repositório Contato](https://github.com/Laysabernardes/IFSP_4_EDD2/tree/master/4_Contato)           | 30/09/2024              | 07/10/2024      |    Console         |
 | Biblioteca         | `./5_Biblioteca`    | [Repositório Contato](https://github.com/Laysabernardes/IFSP_4_EDD2/tree/master/5_Biblioteca)        | 21/10/2024              | 04/11/2024      |    Console         |
-| Atendimento        | `./6_Atendimento`   | [Repositório Contato](https://github.com/Laysabernardes/IFSP_4_EDD2/tree/master/6_Atendimento)       | 11/11/2024              | 25/11/2024      |  Windows Forms     |
+| Atendimento        | `./6_Atendimento`   | [Repositório Atendimento](https://github.com/Laysabernardes/IFSP_4_EDD2/tree/master/6_Atendimento)   | 11/11/2024              | 25/11/2024      |  Windows Forms     |
 
