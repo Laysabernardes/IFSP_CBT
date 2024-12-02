@@ -12,4 +12,4 @@
 | Contato            | `./4_Contato`       | [Repositório Contato](https://github.com/Laysabernardes/IFSP_4_EDD2/tree/master/4_Contato)           | 30/09/2024              | 07/10/2024      |    Console         |
 | Biblioteca         | `./5_Biblioteca`    | [Repositório Contato](https://github.com/Laysabernardes/IFSP_4_EDD2/tree/master/5_Biblioteca)        | 21/10/2024              | 04/11/2024      |    Console         |
 | Atendimento        | `./6_Atendimento`   | [Repositório Atendimento](https://github.com/Laysabernardes/IFSP_4_EDD2/tree/master/6_Atendimento)   | 11/11/2024              | 25/11/2024      |  Windows Forms     |
-
+| Medicamento        | `./7_Medicamento`   | [Repositório Atendimento](https://github.com/Laysabernardes/IFSP_4_EDD2/tree/master/7_Medicamento)   | 25/11/2024              | 02/12/2024      |  Console           |
