@@ -1,0 +1,122 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\laysa\\Documents\\ADS - 4\u00BA SEMESTRE\\ED2\\8_Acessos\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F2308606-21A0-4F69-95D2-2B895AD27DD7}|8_Acessos.csproj|c:\\users\\laysa\\documents\\ads - 4\u00BA semestre\\ed2\\8_acessos\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2308606-21A0-4F69-95D2-2B895AD27DD7}|8_Acessos.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2308606-21A0-4F69-95D2-2B895AD27DD7}|8_Acessos.csproj|c:\\users\\laysa\\documents\\ads - 4\u00BA semestre\\ed2\\8_acessos\\ambiente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2308606-21A0-4F69-95D2-2B895AD27DD7}|8_Acessos.csproj|solutionrelative:ambiente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2308606-21A0-4F69-95D2-2B895AD27DD7}|8_Acessos.csproj|c:\\users\\laysa\\documents\\ads - 4\u00BA semestre\\ed2\\8_acessos\\cadastro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2308606-21A0-4F69-95D2-2B895AD27DD7}|8_Acessos.csproj|solutionrelative:cadastro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2308606-21A0-4F69-95D2-2B895AD27DD7}|8_Acessos.csproj|c:\\users\\laysa\\documents\\ads - 4\u00BA semestre\\ed2\\8_acessos\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2308606-21A0-4F69-95D2-2B895AD27DD7}|8_Acessos.csproj|solutionrelative:usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2308606-21A0-4F69-95D2-2B895AD27DD7}|8_Acessos.csproj|c:\\users\\laysa\\documents\\ads - 4\u00BA semestre\\ed2\\8_acessos\\dados.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{F2308606-21A0-4F69-95D2-2B895AD27DD7}|8_Acessos.csproj|solutionrelative:dados.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2308606-21A0-4F69-95D2-2B895AD27DD7}|8_Acessos.csproj|c:\\users\\laysa\\documents\\ads - 4\u00BA semestre\\ed2\\8_acessos\\log.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2308606-21A0-4F69-95D2-2B895AD27DD7}|8_Acessos.csproj|solutionrelative:log.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "dados.txt",
+              "DocumentMoniker": "C:\\Users\\laysa\\Documents\\ADS - 4\u00BA SEMESTRE\\ED2\\8_Acessos\\dados.txt",
+              "RelativeDocumentMoniker": "dados.txt",
+              "ToolTip": "C:\\Users\\laysa\\Documents\\ADS - 4\u00BA SEMESTRE\\ED2\\8_Acessos\\dados.txt",
+              "RelativeToolTip": "dados.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-12-14T18:01:26.065Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Cadastro.cs",
+              "DocumentMoniker": "C:\\Users\\laysa\\Documents\\ADS - 4\u00BA SEMESTRE\\ED2\\8_Acessos\\Cadastro.cs",
+              "RelativeDocumentMoniker": "Cadastro.cs",
+              "ToolTip": "C:\\Users\\laysa\\Documents\\ADS - 4\u00BA SEMESTRE\\ED2\\8_Acessos\\Cadastro.cs",
+              "RelativeToolTip": "Cadastro.cs",
+              "ViewState": "AgIAAFQAAAAAAAAAAAAYwE4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-14T17:53:32.135Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Log.cs",
+              "DocumentMoniker": "C:\\Users\\laysa\\Documents\\ADS - 4\u00BA SEMESTRE\\ED2\\8_Acessos\\Log.cs",
+              "RelativeDocumentMoniker": "Log.cs",
+              "ToolTip": "C:\\Users\\laysa\\Documents\\ADS - 4\u00BA SEMESTRE\\ED2\\8_Acessos\\Log.cs",
+              "RelativeToolTip": "Log.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAWwBgAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-14T17:52:56.552Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Ambiente.cs",
+              "DocumentMoniker": "C:\\Users\\laysa\\Documents\\ADS - 4\u00BA SEMESTRE\\ED2\\8_Acessos\\Ambiente.cs",
+              "RelativeDocumentMoniker": "Ambiente.cs",
+              "ToolTip": "C:\\Users\\laysa\\Documents\\ADS - 4\u00BA SEMESTRE\\ED2\\8_Acessos\\Ambiente.cs*",
+              "RelativeToolTip": "Ambiente.cs*",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAnwA4AAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-14T17:52:09.317Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Usuario.cs",
+              "DocumentMoniker": "C:\\Users\\laysa\\Documents\\ADS - 4\u00BA SEMESTRE\\ED2\\8_Acessos\\Usuario.cs",
+              "RelativeDocumentMoniker": "Usuario.cs",
+              "ToolTip": "C:\\Users\\laysa\\Documents\\ADS - 4\u00BA SEMESTRE\\ED2\\8_Acessos\\Usuario.cs",
+              "RelativeToolTip": "Usuario.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAawCsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-14T17:49:00.428Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\laysa\\Documents\\ADS - 4\u00BA SEMESTRE\\ED2\\8_Acessos\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\laysa\\Documents\\ADS - 4\u00BA SEMESTRE\\ED2\\8_Acessos\\Program.cs*",
+              "RelativeToolTip": "Program.cs*",
+              "ViewState": "AgIAAMkAAAAAAAAAAAAcwNUAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-14T17:44:57.144Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
