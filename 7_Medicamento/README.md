@@ -2,7 +2,6 @@
 
 **Aluna:** Laysa Bernardes Campos da Rocha - CB3024873 
 
-**Aluno:** Lucas Lopes Cruz - CB3025284
 
 | Lote| 
 |-| 
