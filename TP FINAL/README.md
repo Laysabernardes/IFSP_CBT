@@ -1,11 +1,11 @@
 # TRABALHO FINAL
 
 **Aluna:** Laysa Bernardes Campos da Rocha - CB3024873
+
 **Aluno:** Lucas Lopes Cruz - CB3025284
 
 Obs: Os vídeos demonstrando o funcionamento da aplicação estão listados abaixo.
 
-![tpfinal](.tpfinal.gif)
 ---
 Crie uma tela para cadastro de aluno de academia com os seguintes requisitos, os seguintes campos são <strong>obrigatórios</strong>
 1. Nome (String)
@@ -27,4 +27,7 @@ Apresenta dados (na forma de json [apresentar os dados contidos na tela em forma
 Sair e Limpar (1,0)
 
 Clique [aqui](https://youtu.be/YYl9ZtCGVmo) para ver um vídeo do programa no Youtube
+
+![tpfinal](./tpfinal.gif)
+
 <br>
