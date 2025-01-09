@@ -5,6 +5,7 @@
 
 Obs: Os vídeos demonstrando o funcionamento da aplicação estão listados abaixo.
 
+![tpfinal](.tpfinal.gif)
 ---
 Crie uma tela para cadastro de aluno de academia com os seguintes requisitos, os seguintes campos são <strong>obrigatórios</strong>
 1. Nome (String)
@@ -25,5 +26,5 @@ Inclusão no banco de dados (5,0)<br>
 Apresenta dados (na forma de json [apresentar os dados contidos na tela em formato json após ocnversão em um JOptionPane]) (3,0)<br>
 Sair e Limpar (1,0)
 
-Clique [aqui](xxxx) para ver um vídeo do programa funcionando
+Clique [aqui](https://youtu.be/YYl9ZtCGVmo) para ver um vídeo do programa no Youtube
 <br>

@@ -1,3 +1,6 @@
+//Aluna: Laysa Bernardes Campos da Rocha - CB3024873 
+//Aluno: Lucas Lopes Cruz - CB3025284 
+
 import javax.swing.*;
 import com.google.gson.Gson;
 import java.awt.*;
@@ -7,11 +10,7 @@ import java.sql.*;
 
 public class Cadastro extends JFrame {
 
-    private JTextField campoNome;
-    private JTextField campoIdade;
-    private JTextField campoPeso;
-    private JTextField campoAltura;
-    private JTextField campoObjetivo;
+    private JTextField campoNome, campoIdade, campoPeso, campoAltura, campoObjetivo;
 
     public Cadastro() {
         setTitle("Cadastro de Aluno - Academia");
@@ -19,14 +18,12 @@ public class Cadastro extends JFrame {
         setLayout(new GridLayout(7, 2, 5, 5)); 
         setDefaultCloseOperation(EXIT_ON_CLOSE);
 
-        // Campos de entrada
         campoNome = new JTextField();
         campoIdade = new JTextField();
         campoPeso = new JTextField();
         campoAltura = new JTextField();
         campoObjetivo = new JTextField();
 
-        // Adicionando componentes à interface
         add(new JLabel("Nome:"));
         add(campoNome);
         add(new JLabel("Idade:"));
@@ -38,26 +35,19 @@ public class Cadastro extends JFrame {
         add(new JLabel("Objetivo:"));
         add(campoObjetivo);
 
-        // Botões
         JButton btnIncluir = new JButton("Incluir");
-        JButton btnLimpar = new JButton("Limpar");
-        JButton btnApresentar = new JButton("Apresentar Dados");
-        JButton btnSair = new JButton("Sair");
-
         add(btnIncluir);
+        JButton btnLimpar = new JButton("Limpar");
         add(btnLimpar);
+        JButton btnApresentar = new JButton("Apresentar Dados");
         add(btnApresentar);
+        JButton btnSair = new JButton("Sair");
         add(btnSair);
 
-        // Ações dos botões
         btnLimpar.addActionListener(e -> limparCampos());
-
         btnIncluir.addActionListener(e -> incluirAluno());
-
         btnApresentar.addActionListener(e -> apresentarAluno());
-
         btnSair.addActionListener(e -> System.exit(0));
-
         setVisible(true);
     }
 
