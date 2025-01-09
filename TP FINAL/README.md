@@ -1,19 +1,29 @@
 # TRABALHO FINAL
 
 **Aluna:** Laysa Bernardes Campos da Rocha - CB3024873
-
 **Aluno:** Lucas Lopes Cruz - CB3025284
 
 Obs: Os vídeos demonstrando o funcionamento da aplicação estão listados abaixo.
 
 ---
+Crie uma tela para cadastro de aluno de academia com os seguintes requisitos, os seguintes campos são <strong>obrigatórios</strong>
+1. Nome (String)
+2. Idade (int)
+3. Peso (float)
+4. Altura (float)
+5. Objetivo (String)
 
-1. Elabore um programa em Java que apresente um frame semelhante ao que se segue:
-   ![Modelo](src/tp4.png)
-2. Deverá criar um banco SQL chamado aulajava com as tabelas conforme o esquema abaixo:
-   ![Modelo](src/tp4.1.png)
+A tela deve incluir os seuintes botões
+1. Incluir (registra no banco de dados, sem consistência)
+2. Limpar
+3. Apresenta Dados
+4. Sair
 
-3. Acrescente alguns registros, respeitando as chaves e o relacionamento;
-4. Estabeleça a conexão utilizando o JDBC;
-5. Ao clicar no botão Pesquisar, deverá ser efetuado o select (utilize like) para “preencher” um recordset e PreparedStatement para fazer o SQL.
-6. Os botões Próximo e Anterior devem permitir a navegação pelo recordset até os limites inicial e final.
+## Critérios de avaliação
+Layout da tela com todos os requisitos (1,0)<br>
+Inclusão no banco de dados (5,0)<br>
+Apresenta dados (na forma de json [apresentar os dados contidos na tela em formato json após ocnversão em um JOptionPane]) (3,0)<br>
+Sair e Limpar (1,0)
+
+Clique [aqui](xxxx) para ver um vídeo do programa funcionando
+<br>
