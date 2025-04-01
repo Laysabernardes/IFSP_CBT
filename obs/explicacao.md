@@ -1,13 +1,14 @@
 Simulação do Algoritmo A*
-1. Inicialização
+## 1. Inicialização
   Cidade inicial: Arad
   Adicionamos Arad à fila de prioridade:
+
   ![image](image_2.png)
 
    Prioridade: 366 (heurística) + 0 (distância acumulada) = 366.
    Fila: [(366, ['Arad', 0])].
 
-2. Primeiro passo: Retira Arad da fila
+## 2. Primeiro passo: Retira Arad da fila
 Retiramos Arad da fila:
 
       atual = fila_prioridade.get()[1]
@@ -15,7 +16,7 @@ Cidade atual: Arad
 Caminho: ['Arad']
 Distância acumulada: 0.
 
-3. Explora os vizinhos de Arad
+## 3. Explora os vizinhos de Arad
 Os vizinhos de Arad são Sibiu, Timisoara, e Zerind. Calculamos suas prioridades:
 
 Sibiu:
@@ -40,9 +41,10 @@ Zerind:
   Prioridade: 374 + 75 + 0 = 449.
 
 Adicionamos as cidades à fila:
+
 ![image](image.png)
 
-4. Segundo passo: Retira Sibiu da fila
+## 4. Segundo passo: Retira Sibiu da fila
 Retiramos Sibiu da fila:
 
   atual = fila_prioridade.get()[1]
@@ -52,7 +54,7 @@ Retiramos Sibiu da fila:
 
   Distância acumulada: 140.
 
-5. Explora os vizinhos de Sibiu
+## 5. Explora os vizinhos de Sibiu
 Os vizinhos de Sibiu são Fagaras, Oradea, e Rimnicu Vilcea. Calculamos suas prioridades:
 
 Fagaras:
@@ -78,7 +80,7 @@ Rimnicu Vilcea:
 
 ![image](image_3.png)
 
-6. Próximo passo: Continuar até Bucharest
+## 6. Próximo passo: Continuar até Bucharest
 O processo segue repetindo:
 
 Escolhe o nó com menor prioridade.
