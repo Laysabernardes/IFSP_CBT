@@ -17,6 +17,7 @@ def obter_heuristicas():
         )  # Adiciona ao dicionário: cidade como chave e heurística como valor (convertido para inteiro)
     return heuristicas
 
+
 # Função para obter as cidades e suas coordenadas a partir de um arquivo
 def obter_cidades():
     cidade = {}  # Dicionário para armazenar as coordenadas das cidades
@@ -35,6 +36,7 @@ def obter_cidades():
             0]  # Mapeia o índice numérico ao nome da cidade
         indice += 1  # Incrementa o índice para a próxima cidade
     return cidade, codigos_cidades
+
 
 # Função para criar o grafo a partir de um arquivo
 def criar_grafo():
@@ -91,6 +93,7 @@ def criar_grafo():
 
     return grafo
 
+
 # Algoritmo A* (Astar)
 def algoritmo_a_estrela(cidade_inicio,
                         heuristicas,
@@ -128,6 +131,7 @@ def algoritmo_a_estrela(cidade_inicio,
                      vizinho))  # Adiciona à fila com nova prioridade
 
     return caminho, distancia_total
+
 
 # Função para desenhar o mapa e os caminhos
 def desenhar_mapa(cidades, caminho_a_estrela, grafo):
@@ -168,6 +172,7 @@ def desenhar_mapa(cidades, caminho_a_estrela, grafo):
         loc="lower left")  # Posiciona a legenda no canto inferior esquerdo
     plt.show()  # Exibe o mapa
 
+
 # Função principal para executar o programa
 def main():
     heuristicas = obter_heuristicas()  # Obtem as heurísticas do arquivo
@@ -191,7 +196,8 @@ def main():
         a_estrela, distancia_total = algoritmo_a_estrela(
             nome_cidade, heuristicas, grafo)
         print("ASTAR => ", a_estrela)
-        print("Distância total percorrida: ", distancia_total, "km")
+        print("Custo total: ", distancia_total)
         desenhar_mapa(cidades, a_estrela, grafo)
+
 
 main()
