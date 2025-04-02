@@ -63,4 +63,5 @@ Desenha um mapa com o grafo e o caminho encontrado utilizando matplotlib
 - Laysa Bernardes
 - Lucas Lopes
 - Maria Eduarda Fodor
+- Miguel Luizatto Alves
 - Pedro Xavier
