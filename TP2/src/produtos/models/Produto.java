@@ -1,7 +1,5 @@
 package produtos.models;
 
-/** @author João Paulo e Matheus Palinkas */
-
 public class Produto {
 	
 	public Produto() {
