@@ -72,7 +72,7 @@ Quando a temperatura ultrapassa 15°C, o LED amarelo acende, o buzzer dispara e 
 ### 💧 Alerta de Umidade Baixa
 Se a umidade cai abaixo de 50%, o LED vermelho e o buzzer são ativados, e o display mostra a mensagem "Umidade BAIXA".
 
-![GIF do Alerta de Umidade](doc/gifs/umidade.gif)
+![GIF do Alerta de Umidade](doc/umidade.gif)
 
 ### 💡 Transição de Luminosidade
 O sistema reage em tempo real às mudanças de luz, acionando o LED correspondente e atualizando o display.
@@ -89,8 +89,8 @@ Um vídeo de 3 minutos explicando a implementação do projeto, as dificuldades 
 
 ## 👨‍💻 Autores
 
-* **Beatriz Bastos** - CB
+* **Beatriz Bastos Borges** - CB3024946
 * **Laysa Bernardes Campos da Rocha** - CB3024873
-* **Lucas Lopes Cruz** - CB
-* **Miguel Luizatto** - CB
+* **Lucas Lopes Cruz** - CB3025284
+* **Miguel Luizatto Alves** - CB3025039
 
