@@ -10,6 +10,12 @@ Este projeto foi desenvolvido como parte do **Desafio 01** da matéria de *Intro
 O sistema utiliza um Arduino Uno para ler dados de múltiplos sensores e, com base nesses dados, aciona alertas visuais (LEDs), sonoros (Buzzer) e exibe informações detalhadas em um Display LCD 16x2.
 
 ---
+## 💡 Tinkercad
+
+[Projeto de Sensor de Temperatura e Umidade no Tinkercad](https://www.tinkercad.com/things/cSuUOUxI2GD-sensor-de-temperatura-e-umidade-ok)
+
+
+---
 
 ## 📋 Funcionalidades Principais
 
@@ -48,9 +54,9 @@ O sistema implementa 13 requisitos essenciais para o controle do ambiente:
 * 1x LED Vermelho 5mm
 * 3x Resistores de 110Ω (para os LEDs)
 * 1x Fotorresistor (LDR)
-* 1x Resistor de 220Ω
+* 1x Resistor de (220Ω)
 * 1x Sensor de Temperatura (TMP36)
-* 1x Resistor
+* 2x Resistor (220Ω)
 * 2x Potenciômetro de 250kΩ (Um para o sensor de umidade e outro para o display)
 * 1x Buzzer (Piezo)
 * Jumpers (Fios de Conexão)
@@ -84,8 +90,8 @@ O sistema reage em tempo real às mudanças de luz, acionando o LED corresponden
 
 Um vídeo de 3 minutos explicando a implementação do projeto, as dificuldades encontradas e as soluções aplicadas está disponível no link abaixo.
 
-
 ---
+
 
 ## 👨‍💻 Autores
 
