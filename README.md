@@ -18,11 +18,10 @@ O diretório está organizado com os seguintes arquivos:
 
 ## Fonte dos Dados
 
-Os dados utilizados são da Pesquisa Nacional por Amostra de Domicílios Contínua (PNAD Contínua), originalmente disponibilizados pelo IBGE.
+Os dados utilizados são da Pesquisa Nacional por Amostra de Domicílios Contínua (PNAD Contínua), originalmente disponibilizados pelo IBGE estão centralizados no seguinte link:
 
-Para este projeto, os arquivos de dados brutos (`.txt`) estão centralizados no seguinte link do Google Drive:
-
--   **Link do Google Drive:** [https://drive.google.com/drive/folders/1KqGLXvdGr9-QZdZLtxpmVXser4n5lg9q](https://drive.google.com/drive/folders/1KqGLXvdGr9-QZdZLtxpmVXser4n5lg9q)
+-   **Microdados 2024:** [https://ftp.ibge.gov.br/Trabalho_e_Rendimento/Pesquisa_Nacional_por_Amostra_de_Domicilios_continua/Trimestral/Microdados/2024](https://ftp.ibge.gov.br/Trabalho_e_Rendimento/Pesquisa_Nacional_por_Amostra_de_Domicilios_continua/Trimestral/Microdados/2024)
+-   **Microdados 2023:** [https://ftp.ibge.gov.br/Trabalho_e_Rendimento/Pesquisa_Nacional_por_Amostra_de_Domicilios_continua/Trimestral/Microdados/2023](https://ftp.ibge.gov.br/Trabalho_e_Rendimento/Pesquisa_Nacional_por_Amostra_de_Domicilios_continua/Trimestral/Microdados/2023)
 
 ---
 
