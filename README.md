@@ -58,12 +58,38 @@ O script realiza as seguintes etapas lógicas:
 1.  **Leitura da Estrutura:** Utiliza o arquivo `input_PNADC_trimestral.sas` para mapear as 420 colunas dos arquivos de dados brutos.
 2.  **Processamento em Chunks:** Lê os arquivos de dados trimestrais em pedaços (chunks) para não sobrecarregar a memória RAM.
 3.  **Filtro de Profissionais de TI:** A identificação dos profissionais de TI é feita na coluna `V4010` (Código da ocupação). Os códigos utilizados são baseados na **"Classificação de Ocupações para Pesquisas Domiciliares (COD)"** do IBGE e incluem as seguintes famílias:
-    -   `1330`: Gerentes de tecnologia da informação
-    -   `2121`: Analistas de sistemas
-    -   `2122`: Desenvolvedores de páginas de internet (web) e multimídia
-    -   `2123`: Desenvolvedores de aplicativos e programas computacionais
-    -   `2129`: Outros especialistas em tecnologia da informação
-    -   `3131`: Técnicos em operação de computadores
-    -   `3132`: Técnicos em manutenção de TICs
-    -   `3134`: Técnicos de redes e de suporte ao usuário de TICs
+    -   Dirigentes e Gerentes
+        -   `1330`: Gerentes de tecnologia da informação
+    -   Profissionais de Nível Superior
+        -   `2151`: Engenheiros em eletrônicos
+        -   `2153`: Engenheiros em telecomunicações
+        -   `2166`: Desenhistas gráficas e de multimídia
+        -   `2356`: Instrutores em tecnologias da informação
+        -   `2434`: Profissionais de vendas de tecnologia da informação e comunicações
+    -   Profissionais de Tecnologias da Informação e Comunicações (Categoria Principal)
+        -   `2511`: Analistas de sistemas
+        -   `2512`: Desenvolvedores de programas e aplicativos (software)
+        -   `2513`: Desenvolvedores de páginas de internet (web) e multimídia
+        -   `2514`: Programadores de aplicações
+        -   `2519`: Desenvolvedores e analistas de programas e aplicativos (software) e multimídia não classificados anteriormente
+        -   `2521`: Desenhistas e administradores de bases de dados
+        -   `2522`: Administradores de sistemas
+        -   `2523`: Profissionais em rede de computadores
+        -   `2529`: Especialistas em base de dados e em redes de computadores não classificados anteriormente
+    -   Técnicos e Profissionais de Nível Médio
+        -   `3113`: Eletrotécnicos
+        -   `3114`: Técnicos em eletrônica
+        -   `3522`: Técnicos de engenharia de telecomunicações
+    -   Técnicos de Nível Médio da Tecnologia da informação e das Comunicações (Categoria Principal)
+        -   `3511`: Técnicos em operações de tecnologia da informação e das comunicações
+        -   `3512`: Técnicos em assistência ao usuário de tecnologia da informação e das comunicações
+        -   `3513`: Técnicos de redes e sistemas de computadores
+        -   `3514`: Técnicos da web
+        -   `3521`: Técnicos em radiodifusão e gravação audivisual
+    -   Trabalhadores Especializados em Eletrônica e Eletricidade
+        -   `7421`: Mecânicos e reparadores em eletrônica
+        -   `7422`: Instaladores e reparadores em tecnologia da informação e comunicações
+    -   Trabalhadores de Apoio a Operadores
+        -   `4131`: Operadores de máquina de processamento de texto e mecanógrafos
+        -   `4132`: Operadores de entrada de dados
 4.  **Geração dos Resultados:** Calcula e exibe estatísticas sobre a distribuição geográfica, perfil de gênero, renda, educação e idade dos profissionais encontrados.
