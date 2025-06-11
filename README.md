@@ -90,6 +90,9 @@ O sistema reage em tempo real às mudanças de luz, acionando o LED corresponden
 
 Um vídeo de 3 minutos explicando a implementação do projeto, as dificuldades encontradas e as soluções aplicadas está disponível no link abaixo.
 
+[Youtube - Projeto](https://youtu.be/h4ULBU8l6DU?si=NWrLc1X3uLW6ZbgO)
+
+
 ---
 
 
