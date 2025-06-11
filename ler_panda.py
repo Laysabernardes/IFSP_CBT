@@ -10,8 +10,18 @@ arquivos_dados = [
 caminho_input = 'input_PNADC_trimestral.sas' 
 
 # Usando os códigos da "Classificação de Ocupações Domiciliares (COD)" para a coluna V4010
-codigos_ti_v4010 = [
+codigos_tic_v4010 = [
+    # Dirigentes e Gerentes
     1330,  # Dirigentes de serviços de tecnologia da informação e comunicações
+
+    # Profissionais de Nível Superior
+    2151,  # Engenheiros eletrônicos
+    2153,  # Engenheiros em telecomunicações
+    2166,  # Desenhistas gráficos e de multimídia
+    2356,  # Instrutores em tecnologias da informação
+    2434,  # Profissionais de vendas de tecnologia da informação e comunicações
+
+    # Profissionais de Tecnologias da Informação e Comunicações (Categoria Principal)
     2511,  # Analistas de sistemas
     2512,  # Desenvolvedores de programas e aplicativos (software)
     2513,  # Desenvolvedores de páginas de internet (web) e multimídia
@@ -21,18 +31,37 @@ codigos_ti_v4010 = [
     2522,  # Administradores de sistemas
     2523,  # Profissionais em rede de computadores
     2529,  # Especialistas em base de dados e em redes de computadores não classificados anteriormente
+
+    # Técnicos e Profissionais de Nível Médio
+    3113,  # Eletrotécnicos
+    3114,  # Técnicos em eletrônica
+    3522,  # Técnicos de engenharia de telecomunicações
+
+    # Técnicos de Nível Médio da Tecnologia da informação e das Comunicações (Categoria Principal)
     3511,  # Técnicos em operações de tecnologia da informação e das comunicações
     3512,  # Técnicos em assistência ao usuário de tecnologia da informação e das comunicações
     3513,  # Técnicos de redes e sistemas de computadores
     3514,  # Técnicos da web
+    3521,  # Técnicos em radiodifusão e gravação audivisual
+    
+    # Trabalhadores Especializados em Eletrônica e Eletricidade
+    7421,  # Mecânicos e reparadores em eletrônica
     7422,  # Instaladores e reparadores em tecnologia da informação e comunicações
-    2356,  # instrutores em tecnologias da informação
-    2434,  # Profissionais de vendas de tecnologia da informação e comunicações
+
+    # Trabalhadores de Apoio a Operadores
+    4131,  # Operadores de máquina de processamento de texto e mecanógrafos
+    4132,  # Operadores de entrada de dados
 ]
 
 # Variáveis que vamos usar na análise final
 colunas_necessarias = [
-    'UF', 'V2007', 'V2009', 'V2010', 'VD3004', 'V4010', 'VD4020'
+    'UF',      # Unidade da Federação
+    'V2007',   # Sexo
+    'V2009',   # Idade na data de referência
+    'V2010',   # Cor ou raça
+    'VD3004',  # Nível de instrução mais elevado alcançado (5 anos ou mais de idade)
+    'V4010',   # Ocupação no trabalho principal
+    'VD4020',  # Rendimento mensal efetivo de todos os trabalhos para pessoas de 14 anos ou mais de idade (apenas pessoas que recebem em dinheiro, produtos ou mercadorias em qualquer trabalho)
 ]
 
 # Dicionários para traduzir os códigos em texto claro
@@ -50,6 +79,14 @@ mapa_educacao = {
     3: 'Médio completo e superior incompleto',
     4: 'Superior completo',
     5: 'Pós-graduação, mestrado ou doutorado',
+}
+mapa_cor_raca = {
+    1: 'Branca',
+    2: 'Preta',
+    3: 'Amarela',
+    4: 'Parda',
+    5: 'Indígena',
+    9: 'Ignorado',
 }
 
 # --- 2. LER O SCRIPT DE INPUT PARA EXTRAIR A ESTRUTURA ---
@@ -95,7 +132,7 @@ for arquivo_dados in arquivos_dados:
             # FILTRANDO PELA COLUNA CORRETA (V4010)
             chunk.dropna(subset=['V4010'], inplace=True)
             chunk['V4010'] = chunk['V4010'].astype(int)
-            chunk_ti = chunk[chunk['V4010'].isin(codigos_ti_v4010)]
+            chunk_ti = chunk[chunk['V4010'].isin(codigos_tic_v4010)]
             
             if not chunk_ti.empty:
                 lista_de_chunks_ti.append(chunk_ti[colunas_necessarias])
@@ -110,42 +147,39 @@ if not lista_de_chunks_ti:
     print("\n--- ANÁLISE CONCLUÍDA ---")
     print("Nenhum profissional de TI encontrado com os códigos COD fornecidos na coluna V4010.")
 else:
+    # Concatena todos os pedaços filtrados em um único DataFrame
     df_ti_final = pd.concat(lista_de_chunks_ti, ignore_index=True)
-    print("\n--- ANÁLISE DO PERFIL DA FORÇA DE TRABALHO EM TECNOLOGIA (ANO COMPLETO) ---")
-    print(f"Total de profissionais de TI na amostra final: {len(df_ti_final)}")
-
-    # ANÁLISE GEOGRÁFICA
-    print("\n--- 1. Distribuição Geográfica ---")
-    df_ti_final['UF_Nome'] = df_ti_final['UF'].map(mapa_uf)
-    dist_uf = df_ti_final['UF_Nome'].value_counts(normalize=True).mul(100).round(2)
-    print("Distribuição percentual por Estado:")
-    print(dist_uf)
-
-    # ANÁLISE DE GÊNERO
-    print("\n--- 2. Perfil de Gênero ---")
-    df_ti_final['Gênero'] = df_ti_final['V2007'].map(mapa_genero)
-    dist_genero = df_ti_final['Gênero'].value_counts(normalize=True).mul(100).round(2)
-    print("Distribuição percentual por Gênero:")
-    print(dist_genero)
-
-    # ANÁLISE DE RENDA
-    print("\n--- 3. Perfil de Renda (R$) ---")
-    renda_valida = df_ti_final[df_ti_final['VD4020'].notna()]
-    print(f"Salário Médio: R$ {renda_valida['VD4020'].mean():.2f}")
-    print(f"Salário Mediano: R$ {renda_valida['VD4020'].median():.2f}")
     
-    renda_por_genero = renda_valida.groupby('Gênero')['VD4020'].mean().round(2)
-    print("\nSalário médio por Gênero:")
-    print(renda_por_genero)
+    print(f"\nTotal de profissionais de TI encontrados na amostra: {len(df_ti_final)}")
+    print("\n--- DADOS DOS PROFISSIONAIS DE TI ENCONTRADOS (sem cálculo) ---")
 
-    # ANÁLISE DE EDUCAÇÃO
-    print("\n--- 4. Perfil Educacional ---")
-    df_ti_final['Educação'] = df_ti_final['VD3004'].map(mapa_educacao)
-    dist_educacao = df_ti_final['Educação'].value_counts(normalize=True).mul(100).round(2)
-    print("Distribuição percentual por Nível de Escolaridade:")
-    print(dist_educacao)
+    # Para melhor visualização, vamos traduzir os códigos para texto
+    # df_ti_final['UF'] = df_ti_final['UF'].map(mapa_uf)
+    # df_ti_final['V2007'] = df_ti_final['V2007'].map(mapa_genero)
+    # df_ti_final['VD3004'] = df_ti_final['VD3004'].map(mapa_educacao)
+    # df_ti_final['V2010'] = df_ti_final['V2010'].map(mapa_cor_raca)
 
-    # ANÁLISE DE IDADE
-    print("\n--- 5. Perfil de Idade ---")
-    print("Estatísticas de Idade:")
-    print(df_ti_final['V2009'].describe().round(1))
+    # Renomeando as colunas para maior clareza
+    df_ti_final.rename(columns={
+        'UF': 'Estado',
+        'V2007': 'Gênero',
+        'V2009': 'Idade',
+        'V2010': 'Cor_Raça',
+        'VD3004': 'Nível_Educação',
+        'V4010': 'Código_Ocupação_TI',
+        'VD4020': 'Renda_Mensal'
+    }, inplace=True)
+
+    # Salva o DataFrame final em um arquivo CSV
+    nome_arquivo_saida = 'profissionais_tic_encontrados.csv'
+    try:
+        # Usamos index=False para não salvar o índice do DataFrame no arquivo
+        # Usamos encoding='utf-8-sig' para garantir a compatibilidade com acentos no Excel
+        df_ti_final.to_csv(nome_arquivo_saida, index=False, encoding='utf-8-sig')
+        
+        print(f"\n--- SUCESSO ---")
+        print(f"Os dados foram salvos com sucesso no arquivo: '{nome_arquivo_saida}'")
+    
+    except Exception as e:
+        print(f"\n--- ERRO ---")
+        print(f"Ocorreu um erro ao salvar o arquivo CSV: {e}")
