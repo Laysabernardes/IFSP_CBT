@@ -62,32 +62,12 @@ colunas_necessarias = [
     'VD3004',  # Nível de instrução mais elevado alcançado (5 anos ou mais de idade)
     'V4010',   # Ocupação no trabalho principal
     'VD4020',  # Rendimento mensal efetivo de todos os trabalhos para pessoas de 14 anos ou mais de idade (apenas pessoas que recebem em dinheiro, produtos ou mercadorias em qualquer trabalho)
+    'VD4031',  # Horas habitualmente trabalhadas por semana em todos os trabalhos
+    'V4012',   # Posição na ocupação (Empregado, Conta própria, Empregador, etc.)
+    'VD4010',  # Grupamento de atividade do trabalho principal
+    'V4029',   # Tinha carteira de trabalho assinada neste trabalho
+    'VD3005'   # Anos de estudo
 ]
-
-# Dicionários para traduzir os códigos em texto claro
-mapa_uf = {
-    11: 'Rondônia', 12: 'Acre', 13: 'Amazonas', 14: 'Roraima', 15: 'Pará', 16: 'Amapá', 17: 'Tocantins',
-    21: 'Maranhão', 22: 'Piauí', 23: 'Ceará', 24: 'Rio Grande do Norte', 25: 'Paraíba', 26: 'Pernambuco',
-    27: 'Alagoas', 28: 'Sergipe', 29: 'Bahia', 31: 'Minas Gerais', 32: 'Espírito Santo', 33: 'Rio de Janeiro',
-    35: 'São Paulo', 41: 'Paraná', 42: 'Santa Catarina', 43: 'Rio Grande do Sul', 50: 'Mato Grosso do Sul',
-    51: 'Mato Grosso', 52: 'Goiás', 53: 'Distrito Federal'
-}
-mapa_genero = {1: 'Homem', 2: 'Mulher'}
-mapa_educacao = {
-    1: 'Sem instrução e fundamental incompleto',
-    2: 'Fundamental completo e médio incompleto',
-    3: 'Médio completo e superior incompleto',
-    4: 'Superior completo',
-    5: 'Pós-graduação, mestrado ou doutorado',
-}
-mapa_cor_raca = {
-    1: 'Branca',
-    2: 'Preta',
-    3: 'Amarela',
-    4: 'Parda',
-    5: 'Indígena',
-    9: 'Ignorado',
-}
 
 # --- 2. LER O SCRIPT DE INPUT PARA EXTRAIR A ESTRUTURA ---
 print("Iniciando o processo...")
@@ -167,7 +147,12 @@ else:
         'V2010': 'Cor_Raça',
         'VD3004': 'Nível_Educação',
         'V4010': 'Código_Ocupação_TI',
-        'VD4020': 'Renda_Mensal'
+        'VD4020': 'Renda_Mensal',
+        'VD4031': 'Horas_Trabalhadas_Semana',
+        'V4012': 'Posição_Ocupacional',
+        'VD4010': 'Atividade_Principal',
+        'V4029': 'Carteira_Assinada',
+        'VD3005': 'Anos_Estudo'
     }, inplace=True)
 
     # Salva o DataFrame final em um arquivo CSV
