@@ -11,3 +11,4 @@
 | TP2             | `./TP2` | [TP2](https://github.com/Laysabernardes/IFSP_5_SWE1/tree/main/TP2) | 19/05/2025      |
 | TP3             | `./TP3` | [TP3](https://github.com/Laysabernardes/IFSP_5_SWE1/tree/main/TP3) | 16/06/2025      |
 | TP4             | `./TP4` | [TP4](https://github.com/Laysabernardes/IFSP_5_SWE1/tree/main/TP4) | 23/06/2025      |
+| Trabalho Final - Prova 2       | `./Prova2` | [Prova 2](https://github.com/Laysabernardes/IFSP_5_SWE1/tree/main/Prova2) | 30/06/2025      |
