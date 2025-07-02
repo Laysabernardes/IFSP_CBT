@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# VERSÃO FINAL COM GERAÇÃO DE GRÁFICOS
+# VERSÃO COM SELEÇÃO DE FEATURES E GERAÇÃO DE GRÁFICOS
 import pandas as pd
 import xgboost as xgb
 from sklearn.model_selection import train_test_split, RandomizedSearchCV
@@ -8,26 +8,22 @@ from sklearn.compose import ColumnTransformer
 from sklearn.pipeline import Pipeline
 from sklearn.metrics import accuracy_score, classification_report
 import warnings
+# --- ALTERAÇÃO 1: Importar bibliotecas de visualização ---
 import matplotlib.pyplot as plt
 import seaborn as sns
 
 warnings.filterwarnings('ignore', category=UserWarning)
 
-print("\n\n--- Iniciando Etapa 2: Modelagem e Visualização ---")
+print("\n\n--- Iniciando Etapa 2: Modelagem de Machine Learning (com Seleção de Features e Gráficos) ---")
 
 # --- 1. CARREGAR E PREPARAR OS DADOS DO CSV ---
 try:
     df = pd.read_csv('profissionais_tic_encontrados_anual.csv')
 except FileNotFoundError:
     print(f"ERRO: Arquivo 'profissionais_tic_encontrados_anual.csv' não encontrado.")
-    print("Por favor, execute primeiro o script 'ler_pandas.py' para gerar este arquivo.")
     exit()
 
-# --- 1.1 ETAPA CRÍTICA DE LIMPEZA: REMOVER SALÁRIOS ZERADOS E NULOS ---
-df.dropna(subset=['Renda_Mensal'], inplace=True)
-df = df[df['Renda_Mensal'] > 0]
-df.dropna(subset=['Horas_Trabalhadas_Semana'], inplace=True)
-
+df.dropna(subset=['Renda_Mensal', 'Carteira_Assinada'], inplace=True)
 print(f"Base de dados carregada com {len(df)} registros válidos para modelagem.")
 
 # --- Feature Engineering Básica ---
@@ -48,7 +44,6 @@ mapa_regiao = {
 
 df['Nome_Estado'] = df['Estado'].map(mapa_uf_para_nome)
 df['Regiao'] = df['Nome_Estado'].map(mapa_regiao)
-df['Experiencia_Estimada'] = (df['Idade'] - df['Anos_Estudo'] - 6).clip(lower=0)
 faixas_idade = [14, 24, 34, 44, 54, 110]
 rotulos_idade = ['14-24', '25-34', '35-44', '45-54', '55+']
 df['Faixa_Etaria'] = pd.cut(df['Idade'], bins=faixas_idade, labels=rotulos_idade, right=False)
@@ -69,17 +64,33 @@ def analisar_grupo(df_grupo, nome_grupo):
 
     print(f"\n>>>> INICIANDO ANÁLISE DO GRUPO: {nome_grupo.upper()} <<<<")
     
+    # --- ALTERAÇÃO AQUI: SELEÇÃO DE FEATURES ---
     features = [
-        'Gênero', 'Cor_Raça', 'Anos_Estudo', 'Horas_Trabalhadas_Semana',
-        'Posição_Ocupacional', 'Atividade_Principal', 'Carteira_Assinada', 'Regiao',
-        'Experiencia_Estimada', 'Faixa_Etaria'
+        'Gênero',
+        # 'Cor_Raça',
+        'Anos_Estudo',
+        'Horas_Trabalhadas_Semana',
+        'Posição_Ocupacional',
+        'Atividade_Principal',
+        'Carteira_Assinada',
+        'Regiao',
+        'Faixa_Etaria'
     ]
     
     X = df_grupo[features]
     y_class = (df_grupo['Renda_Mensal'] > df_grupo['Renda_Mensal'].median()).astype(int)
     
-    colunas_numericas = ['Anos_Estudo', 'Horas_Trabalhadas_Semana', 'Experiencia_Estimada']
-    colunas_categoricas = ['Gênero', 'Cor_Raça', 'Posição_Ocupacional', 'Atividade_Principal', 'Carteira_Assinada', 'Regiao', 'Faixa_Etaria']
+    colunas_numericas = ['Anos_Estudo', 'Horas_Trabalhadas_Semana']
+    
+    colunas_categoricas = [
+        'Gênero',
+        # 'Cor_Raça',
+        'Posição_Ocupacional',
+        'Atividade_Principal',
+        'Carteira_Assinada',
+        'Regiao',
+        'Faixa_Etaria'
+    ]
     
     X_train, X_test, y_train, y_test = train_test_split(X, y_class, test_size=0.2, random_state=42, stratify=y_class)
     
@@ -96,22 +107,30 @@ def analisar_grupo(df_grupo, nome_grupo):
         ('classifier', xgb.XGBClassifier(eval_metric='logloss', use_label_encoder=False, random_state=42))
     ])
 
+    print("\n--- Otimizando hiperparâmetros do modelo... ---")
     param_dist = {
-        'classifier__n_estimators': [100, 200, 300],
-        'classifier__learning_rate': [0.01, 0.05, 0.1],
-        'classifier__max_depth': [3, 5],
+        'classifier__n_estimators': [100, 200, 300, 500],
+        'classifier__learning_rate': [0.01, 0.05, 0.1, 0.2],
+        'classifier__max_depth': [3, 5, 7],
         'classifier__subsample': [0.8, 1.0],
         'classifier__colsample_bytree': [0.8, 1.0]
     }
     
-    random_search = RandomizedSearchCV(pipeline, param_distributions=param_dist, n_iter=30, scoring='accuracy', cv=5, n_jobs=-1, random_state=42, verbose=0)
+    random_search = RandomizedSearchCV(
+        pipeline, param_distributions=param_dist, 
+        n_iter=50, 
+        scoring='accuracy', cv=5, n_jobs=-1, random_state=42, verbose=1
+    )
     random_search.fit(X_train, y_train)
 
+    print(f"\nMelhor Acurácia encontrada na validação cruzada: {random_search.best_score_:.2%}")
+    print("Melhores Hiperparâmetros:", random_search.best_params_)
+    
+    print("\n--- Avaliação Final no Conjunto de Teste com o Melhor Modelo ---")
     best_model = random_search.best_estimator_
     y_pred = best_model.predict(X_test)
     
     print(f"Resultado Acurácia Final: {accuracy_score(y_test, y_pred):.2%}")
-    print("Melhores Hiperparâmetros:", random_search.best_params_)
     print("Relatório de Classificação Detalhado:")
     print(classification_report(y_test, y_pred, target_names=['Salário Baixo', 'Salário Alto']))
     
@@ -120,9 +139,9 @@ def analisar_grupo(df_grupo, nome_grupo):
         feature_names = best_model.named_steps['preprocessor'].get_feature_names_out()
         importances = best_model.named_steps['classifier'].feature_importances_
         df_importances = pd.DataFrame({'feature': feature_names, 'importance': importances}).sort_values('importance', ascending=False)
-        print(df_importances.head(10))
+        print(df_importances.head(15))
         
-        # --- NOVO BLOCO: GERAR E SALVAR O GRÁFICO ---
+        # --- ALTERAÇÃO 2: Bloco de código para gerar e salvar o gráfico ---
         print(f"\n--- Gerando gráfico para o grupo: {nome_grupo} ---")
         
         plt.figure(figsize=(10, 8))
@@ -136,13 +155,14 @@ def analisar_grupo(df_grupo, nome_grupo):
         
         plt.tight_layout()
         
-        nome_arquivo_grafico = f"grafico_importancia_{nome_grupo.replace(' ', '_').lower()}.png"
+        # Gera um nome de arquivo único para cada grupo
+        nome_arquivo_grafico = f"grafico_importancia_features_selecionadas_{nome_grupo.replace(' ', '_').lower()}.png"
         plt.savefig(nome_arquivo_grafico, dpi=300)
         plt.close() # Fecha a figura para liberar memória
         print(f"Gráfico salvo com sucesso como: '{nome_arquivo_grafico}'")
-        
+
     except Exception as e:
-        print(f"Ocorreu um erro ao gerar o gráfico: {e}")
+        print(f"Ocorreu um erro ao gerar a importância das features ou o gráfico: {e}")
 
     print("-" * 60)
 
