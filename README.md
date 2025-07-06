@@ -133,7 +133,7 @@ Para replicar este projeto por completo, siga os passos detalhados abaixo, divid
 
 * ➡️ **Projeto no Wokwi:** [https://wokwi.com/projects/435202695698577409](https://wokwi.com/projects/435202695698577409)
 * ➡️ **Canal no ThingSpeak:** [https://thingspeak.mathworks.com/channels/3000536](https://thingspeak.mathworks.com/channels/3000536)
-* ➡️ **Vídeo de Apresentação:** `[LINK]`
+* ➡️ **Vídeo de Apresentação:** [https://youtu.be/6bk7PajHzq0?si=ov31A1rGoYPqyNeV](https://youtu.be/6bk7PajHzq0?si=ov31A1rGoYPqyNeV)
 
 ---
 
