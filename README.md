@@ -15,7 +15,6 @@
 * [1. Descrição do Projeto](#1-descrição-do-projeto-)
 * [2. Contexto do Problema](#2-contexto-do-problema-)
 * [3. Tecnologias Utilizadas](#3-tecnologias-utilizadas-)
-* [4. Explicação de Funcionamento](#4-explicação-de-funcionamento-)
 * [4. Explicação de Funcionamento](#4-explicação-de-funcionamento-%EF%B8%8F)
 * [5. Instruções para Replicar](#5-instruções-para-replicar-%EF%B8%8F)
 * [6. Links e Capturas de Tela](#6-links-e-capturas-de-tela-)
@@ -62,11 +61,13 @@ O sistema opera em um ciclo contínuo e inteligente:
 2.  🧠 **Processamento Local:** O código compara os valores com limiares ideais. LEDs de status (🟢 OK, 🟡 Atenção, 🔴 Perigo) e um buzzer fornecem feedback imediato no local. O display LCD mostra os valores e o status em tempo real.
 3.  ☁️ **Comunicação com a Nuvem:** Os dados são enviados para um canal no ThingSpeak, onde gráficos públicos são gerados para acompanhamento.
 
-#### 🔔 Notificações Avançadas por E-mail
-Para um monitoramento proativo, o sistema utiliza o app **MATLAB Analysis** do ThingSpeak para enviar dois tipos de e-mails:
+#### 🔔 Notificações de Alerta por E-mail
 
-* 🚨 **Alertas de Emergência:** Se qualquer variável sai da faixa de segurança, um e-mail de alerta é enviado **imediatamente**.
-* 📋 **Relatórios Periódicos:** Em intervalos programados, um e-mail com o status geral é enviado. Isso serve como uma "prova de vida" do sistema, confirmando que tudo está online e funcionando.
+Para notificar o usuário sobre problemas mesmo à distância, o sistema utiliza uma rotina de verificação periódica através do ThingSpeak.
+
+Usando o app **TimeControl**, o script de análise em MATLAB é executado automaticamente em intervalos definidos (por exemplo, a cada 10 minutos). Este script verifica todas as variáveis (temperatura, umidade e luz). Se uma ou mais condições estiverem fora dos limites de segurança, um **único e-mail de alerta consolidado** é enviado, detalhando todos os problemas encontrados.
+
+Se todas as medições estiverem dentro da normalidade, **nenhum e-mail é enviado**, garantindo que o usuário seja notificado apenas quando sua atenção é realmente necessária. Esta abordagem garante a estabilidade do sistema, evitando falhas por excesso de requisições.
 
 ## 5. Instruções para Replicar 🛠️
 
