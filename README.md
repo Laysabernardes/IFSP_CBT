@@ -21,19 +21,23 @@
 * [7. Autores](#7-autores-)
 
 ---
-
 ## 1. Descrição do Projeto 📝
-Este projeto é um sistema de Internet das Coisas (IoT) totalmente funcional, criado para monitorar em tempo real as condições ambientais de uma adega de vinhos. Desenvolvido no ambiente de simulação Wokwi, ele utiliza um microcontrolador ESP32 para ler variáveis críticas, enviando os dados para a plataforma de nuvem ThingSpeak para visualização remota e análise.
+Este projeto é um sistema de Internet das Coisas (IoT) criado não apenas para **monitorar**, mas também para **controlar ativamente** as condições ambientais de uma adega. Desenvolvido no ambiente de simulação Wokwi, ele utiliza um microcontrolador ESP32 para ler variáveis críticas, acionar alertas, corrigir desvios de temperatura automaticamente e enviar todos os dados para a plataforma de nuvem ThingSpeak para visualização remota.
 
 ## 2. Contexto do Problema 🤔
-A qualidade de um vinho é extremamente sensível ao seu ambiente de armazenamento. Variações podem degradar a bebida e causar perdas significativas. O monitoramento manual é ineficiente e propenso a falhas.
+A preservação de vinhos de qualidade é um processo rigoroso que exige um controle ambiental de alta precisão. O principal desafio que este projeto aborda é a vulnerabilidade do armazenamento de vinhos a fatores ambientais críticos. Flutuações de temperatura, umidade ou exposição à luz, mesmo que pequenas, podem comprometer irreversivelmente um investimento de alto valor, tornando a vigilância constante uma necessidade.
 
-Este projeto ataca diretamente os três fatores mais críticos:
-* 🌡️ **Temperatura:** Variações bruscas podem "cozinhar" ou estragar o vinho.
-* 💧 **Umidade:** Níveis incorretos afetam a rolha e podem causar mofo.
-* ☀️ **Luminosidade:** A exposição à luz degrada os compostos do vinho.
+Foi com base nesse problema real que o desafio inicial foi proposto à turma: desenvolver um sistema de monitoramento local para uma adega. Contudo, ao analisar essa solução base, identificamos sua principal limitação: um alarme que soa apenas localmente tem pouca eficácia prática, pois não pode alertar um responsável ausente sobre um problema urgente.
 
-O sistema "Vinheria Safe" oferece uma solução automatizada para garantir a integridade da coleção, prevenindo perdas e preservando a qualidade dos vinhos.
+O objetivo deste projeto, portanto, foi evoluir essa solução, aplicando o conceito de Internet das Coisas (IoT) para criar uma ferramenta de vigilância verdadeiramente robusta e conectada. Para isso, mantivemos o foco nos três fatores mais críticos:
+
+* 🌡️ **Temperatura:**  Essencial para o correto envelhecimento da bebida. Variações podem estragar o vinho de forma irreversível.
+
+* 💧 **Umidade:** Crítica para a saúde da rolha. Níveis inadequados podem levar à oxidação do vinho ou à criação de mofo. 
+
+* ☀️ **Luminosidade:** A luz degrada os compostos do vinho, afetando seu sabor e aroma. O ambiente precisa ser escuro.
+
+Assim, o projeto representa a nossa solução para este desafio: a transformação de um simples monitor local em um sistema de vigilância conectado, capaz de notificar o usuário em qualquer lugar e a qualquer momento, agregando real valor e segurança ao processo.
 
 ## 3. Tecnologias Utilizadas 💻
 
@@ -44,7 +48,7 @@ O sistema "Vinheria Safe" oferece uma solução automatizada para garantir a int
     * 🖥️ **Display:** LCD 20x4 com interface I2C
 
 * **Plataformas e Software:**
-    * 🌐 **Simulador:** Wokwi Simulator [cite: 13
+    * 🌐 **Simulador:** Wokwi Simulator 
     * 👨‍💻 **Programação:** Arduino Framework (C++)
     * ☁️ **Nuvem IoT:** ThingSpeak (com MATLAB Analysis) 
     * 📂 **Versionamento:** GitHub 
@@ -64,29 +68,81 @@ Para um monitoramento proativo, o sistema utiliza o app **MATLAB Analysis** do T
 * 📋 **Relatórios Periódicos:** Em intervalos programados, um e-mail com o status geral é enviado. Isso serve como uma "prova de vida" do sistema, confirmando que tudo está online e funcionando.
 
 ## 5. Instruções para Replicar 🛠️
-1.  **Clone o Repositório:** `git clone [URL_DO_SEU_REPOSITORIO]`
-2.  **Hardware:** Monte o circuito no Wokwi conforme a imagem abaixo.
-3.  **ThingSpeak:** Crie uma conta e um novo canal. Anote o **Channel ID** e a **Write API Key**.
-4.  **Código ESP32:** No arquivo `.ino`, insira seu `Channel ID` e `Write API Key`. Se necessário, altere as credenciais de Wi-Fi.
-5.  **Código MATLAB:** No ThingSpeak, vá em `Apps > MATLAB Analysis`. Crie uma nova análise, cole o código de verificação e configure o app "React" ou "TimeControl" para executá-lo.
-6.  ▶️ **Execute:** Inicie a simulação no Wokwi e veja a mágica acontecer!
+
+Para replicar este projeto por completo, siga os passos detalhados abaixo, divididos entre a configuração do hardware simulado, da plataforma de nuvem e do código.
+
+### Parte 1: Configuração do Hardware (Wokwi)
+
+1.  **Clonar o Repositório:** Primeiro, clone este repositório para ter acesso a todos os arquivos necessários, incluindo o código-fonte do ESP32 e o código de análise do ThingSpeak.
+    ```bash
+    git clone https://github.com/Laysabernardes/ProjetoFinal_IAAP.git
+    ```
+2.  **Montagem do Circuito:** O circuito deve ser montado no Wokwi utilizando os seguintes componentes:
+    * 1x Placa ESP32
+    * 1x Sensor de Temperatura e Umidade DHT22
+    * 1x Fotoresistor (LDR) com um resistor de 10kΩ
+    * 3x LEDs de Status (Verde, Amarelo, Vermelho) com resistores de 110Ω cada
+    * 1x Buzzer Ativo
+    * 1x Display LCD 20x4 com módulo I2C
+    * 1x Protoboard e jumpers para as conexões
+
+    ** Para as conexões, consulte o arquivo [diagram.json](diagram.json) do repositório ou a captura de tela na [seção 6](#6-links-e-capturas-de-tela-).
+
+### Parte 2: Configuração da Nuvem (ThingSpeak)
+
+1.  **Criação do Canal:**
+    * Acesse sua conta no [ThingSpeak](https://thingspeak.com/) e clique em "New Channel".
+    * Dê um nome ao canal (ex: "Vinheria Safe").
+    * Habilite **3 campos (Fields)** e nomeie-os para facilitar a identificação:
+        * `Field 1: Temperatura (C)`
+        * `Field 2: Umidade (%)`
+        * `Field 3: Luminosidade (lx)`
+    * Salve o canal. Na aba **"API Keys"**, anote o seu **"Channel ID"** e a **"Write API Key"**.
+
+2.  **Configuração dos Alertas por E-mail:**
+    * No menu do ThingSpeak, vá em `Apps > MATLAB Analysis` e clique em "New".
+    * Selecione a primeira opção, o template **"Custom (no starter code)"**, e clique em "Create".
+    * No repositório que você clonou, abra o arquivo [alerta_thingspeak.m](alerta_thingspeak.m) (ou o nome que você deu ao seu código MATLAB), copie todo o conteúdo e cole no editor do MATLAB Analysis.
+    * **Importante:** Você precisa de uma "Alerts API Key". No ThingSpeak, vá em `Account > My Profile` e copie sua **"Alerts API Key"**.
+    * No código MATLAB que você colou, atualize a variável `alert_api_key` com a chave que você acabou de copiar.
+    * Salve a análise.
+
+3.  **Agendamento da Verificação:**
+    * Ainda na página do MATLAB Analysis, role para baixo até a seção "TimeControl".
+    * Clique em "Create a new TimeControl" para agendar a execução do seu script.
+    * Configure-o para rodar em uma frequência recorrente (ex: a cada 10 ou 15 minutos). Isso fará com que o ThingSpeak verifique as condições e envie e-mails automaticamente.
+
+### Parte 3: Código e Execução Final
+
+1.  **Configurar o Código do ESP32:**
+    * Abra o arquivo `.ino` do projeto.
+    * Localize as seguintes linhas e substitua os valores pelos que você anotou no Passo 2.1:
+        ```c++
+        unsigned long myChannelNumber = SEU_CHANNEL_ID;
+        const char * myWriteAPIKey = "SUA_WRITE_API_KEY";
+        ```
+    * As credenciais de Wi-Fi já estão configuradas para o Wokwi (`Wokwi-GUEST`).
+2.  **Iniciar a Simulação:**
+    * Com o código configurado, abra o projeto no Wokwi e clique no botão de **Play (seta verde)**.
+    * O ESP32 irá se conectar ao Wi-Fi, começar a ler os sensores e enviar os dados para o seu canal no ThingSpeak.
+    * Você poderá ver os gráficos sendo preenchidos no ThingSpeak e, se alguma condição de alerta for atendida, o e-mail será disparado na próxima execução agendada do TimeControl.
 
 ## 6. Links e Capturas de Tela 🔗
 
-* ➡️ **Projeto no Wokwi:** `[COLOQUE SEU LINK PÚBLICO DO WOKWI AQUI]` 
-* ➡️ **Canal no ThingSpeak:** `[COLOQUE SEU LINK PÚBLICO DO CANAL THINKSPEAK AQUI]` 
-* ➡️ **Vídeo de Apresentação:** `[COLOQUE SEU LINK DO VÍDEO AQUI]` 
+* ➡️ **Projeto no Wokwi:** `[https://wokwi.com/projects/435202695698577409]` 
+* ➡️ **Canal no ThingSpeak:** `[https://thingspeak.mathworks.com/channels/3000536]` 
+* ➡️ **Vídeo de Apresentação:** `[##]` 
 
 ---
 
 ### 🖼️ Circuito no Wokwi
-![Circuito do projeto Vinheria Safe no Wokwi](png)
+![Circuito do projeto Vinheria Safe no Wokwi](projetoFinal.png)
 
 ### 📈 Gráficos no ThingSpeak
-*[PRINT DO THINKSPEAK ]*
+![Gráficos](graficos.png)
 
 ### 📧 Exemplo de E-mail de Alerta
-*[PRINT DO E-MAIL DE ALERTA]*
+![Alerta](alerta.png)
 
 ---
 
