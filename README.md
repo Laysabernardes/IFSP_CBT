@@ -22,7 +22,7 @@
 
 ---
 ## 1. Descrição do Projeto 📝
-Este projeto é um sistema de Internet das Coisas (IoT) criado não apenas para **monitorar**, mas também para **controlar ativamente** as condições ambientais de uma adega. Desenvolvido no ambiente de simulação Wokwi, ele utiliza um microcontrolador ESP32 para ler variáveis críticas, acionar alertas, corrigir desvios de temperatura automaticamente e enviar todos os dados para a plataforma de nuvem ThingSpeak para visualização remota.
+Este projeto consiste em um sistema de Internet das Coisas (IoT) focado no **monitoramento e notificação** das condições ambientais de uma adega. Desenvolvido no ambiente de simulação Wokwi, ele utiliza um microcontrolador ESP32 para ler variáveis críticas, acionar alertas locais e remotos, e enviar todos os dados para a plataforma de nuvem ThingSpeak para visualização e análise.
 
 ## 2. Contexto do Problema 🤔
 A preservação de vinhos de qualidade é um processo rigoroso que exige um controle ambiental de alta precisão. O principal desafio que este projeto aborda é a vulnerabilidade do armazenamento de vinhos a fatores ambientais críticos. Flutuações de temperatura, umidade ou exposição à luz, mesmo que pequenas, podem comprometer irreversivelmente um investimento de alto valor, tornando a vigilância constante uma necessidade.
@@ -131,9 +131,9 @@ Para replicar este projeto por completo, siga os passos detalhados abaixo, divid
 
 ## 6. Links e Capturas de Tela 🔗
 
-* ➡️ **Projeto no Wokwi:** `[https://wokwi.com/projects/435202695698577409]` 
-* ➡️ **Canal no ThingSpeak:** `[https://thingspeak.mathworks.com/channels/3000536]` 
-* ➡️ **Vídeo de Apresentação:** `[##]` 
+* ➡️ **Projeto no Wokwi:** [https://wokwi.com/projects/435202695698577409](https://wokwi.com/projects/435202695698577409)
+* ➡️ **Canal no ThingSpeak:** [https://thingspeak.mathworks.com/channels/3000536](https://thingspeak.mathworks.com/channels/3000536)
+* ➡️ **Vídeo de Apresentação:** `[LINK]`
 
 ---
 
