@@ -86,7 +86,7 @@ Para replicar este projeto por completo, siga os passos detalhados abaixo, divid
     * 1x Display LCD 20x4 com módulo I2C
     * 1x Protoboard e jumpers para as conexões
 
-    ** Para as conexões, consulte o arquivo [diagram.json](diagram.json) do repositório ou a captura de tela na [seção 6](#6-links-e-capturas-de-tela-).
+    ** Para as conexões, consulte o arquivo [diagram.json](https://github.com/Laysabernardes/ProjetoFinal_IAAP/blob/main/diagrama.json) do repositório ou a captura de tela na [seção 6](#6-links-e-capturas-de-tela-).
 
 ### Parte 2: Configuração da Nuvem (ThingSpeak)
 
@@ -102,7 +102,7 @@ Para replicar este projeto por completo, siga os passos detalhados abaixo, divid
 2.  **Configuração dos Alertas por E-mail:**
     * No menu do ThingSpeak, vá em `Apps > MATLAB Analysis` e clique em "New".
     * Selecione a primeira opção, o template **"Custom (no starter code)"**, e clique em "Create".
-    * No repositório que você clonou, abra o arquivo [alerta_thingspeak.m](alerta_thingspeak.m) (ou o nome que você deu ao seu código MATLAB), copie todo o conteúdo e cole no editor do MATLAB Analysis.
+    * No repositório que você clonou, abra o arquivo [alerta_thingspeak.m](https://github.com/Laysabernardes/ProjetoFinal_IAAP/blob/main/alerta_thingspeak.m) (ou o nome que você deu ao seu código MATLAB), copie todo o conteúdo e cole no editor do MATLAB Analysis.
     * **Importante:** Você precisa de uma "Alerts API Key". No ThingSpeak, vá em `Account > My Profile` e copie sua **"Alerts API Key"**.
     * No código MATLAB que você colou, atualize a variável `alert_api_key` com a chave que você acabou de copiar.
     * Salve a análise.
