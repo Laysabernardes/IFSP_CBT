@@ -13,10 +13,10 @@
 ## 📚 Índice
 
 * [1. Descrição do Projeto](#1-descrição-do-projeto-)
-* [2. Contexto do Problema](#2-contexto-do-problema-%EF%B8%8F)
+* [2. Contexto do Problema](#2-contexto-do-problema-)
 * [3. Tecnologias Utilizadas](#3-tecnologias-utilizadas-)
-* [4. Explicação de Funcionamento](#4-explicação-de-funcionamento-%EF%B8%8F)
-* [5. Instruções para Replicar](#5-instruções-para-replicar-%EF%B8%8F)
+* [4. Explicação de Funcionamento](#4-explicação-de-funcionamento-)
+* [5. Instruções para Replicar](#5-instruções-para-replicar-)
 * [6. Links e Capturas de Tela](#6-links-e-capturas-de-tela-)
 * [7. Autores](#7-autores-)
 
