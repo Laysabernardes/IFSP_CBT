@@ -1,0 +1,8 @@
+C:\Users\laysa\Documents\c#\lista2.1\202\bin\Debug\202.exe.config
+C:\Users\laysa\Documents\c#\lista2.1\202\bin\Debug\202.exe
+C:\Users\laysa\Documents\c#\lista2.1\202\bin\Debug\202.pdb
+C:\Users\laysa\Documents\c#\lista2.1\202\obj\Debug\202.csproj.AssemblyReference.cache
+C:\Users\laysa\Documents\c#\lista2.1\202\obj\Debug\202.csproj.SuggestedBindingRedirects.cache
+C:\Users\laysa\Documents\c#\lista2.1\202\obj\Debug\202.csproj.CoreCompileInputs.cache
+C:\Users\laysa\Documents\c#\lista2.1\202\obj\Debug\202.exe
+C:\Users\laysa\Documents\c#\lista2.1\202\obj\Debug\202.pdb

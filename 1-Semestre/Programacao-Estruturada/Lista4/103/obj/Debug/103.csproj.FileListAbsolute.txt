@@ -1,0 +1,8 @@
+C:\Users\laysa\Documents\c#\Lista4\103\bin\Debug\103.exe.config
+C:\Users\laysa\Documents\c#\Lista4\103\bin\Debug\103.exe
+C:\Users\laysa\Documents\c#\Lista4\103\bin\Debug\103.pdb
+C:\Users\laysa\Documents\c#\Lista4\103\obj\Debug\103.csproj.AssemblyReference.cache
+C:\Users\laysa\Documents\c#\Lista4\103\obj\Debug\103.csproj.SuggestedBindingRedirects.cache
+C:\Users\laysa\Documents\c#\Lista4\103\obj\Debug\103.csproj.CoreCompileInputs.cache
+C:\Users\laysa\Documents\c#\Lista4\103\obj\Debug\103.exe
+C:\Users\laysa\Documents\c#\Lista4\103\obj\Debug\103.pdb
