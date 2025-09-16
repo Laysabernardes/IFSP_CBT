@@ -1,0 +1,8 @@
+C:\Users\laysa\Documents\c#\lista1\ex5\bin\Debug\ex5.exe.config
+C:\Users\laysa\Documents\c#\lista1\ex5\bin\Debug\ex5.exe
+C:\Users\laysa\Documents\c#\lista1\ex5\bin\Debug\ex5.pdb
+C:\Users\laysa\Documents\c#\lista1\ex5\obj\Debug\ex5.csproj.AssemblyReference.cache
+C:\Users\laysa\Documents\c#\lista1\ex5\obj\Debug\ex5.csproj.SuggestedBindingRedirects.cache
+C:\Users\laysa\Documents\c#\lista1\ex5\obj\Debug\ex5.csproj.CoreCompileInputs.cache
+C:\Users\laysa\Documents\c#\lista1\ex5\obj\Debug\ex5.exe
+C:\Users\laysa\Documents\c#\lista1\ex5\obj\Debug\ex5.pdb

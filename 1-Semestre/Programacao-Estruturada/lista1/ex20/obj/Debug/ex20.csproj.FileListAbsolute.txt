@@ -1,0 +1,8 @@
+C:\Users\laysa\Documents\c#\lista1\ex20\bin\Debug\ex20.exe.config
+C:\Users\laysa\Documents\c#\lista1\ex20\bin\Debug\ex20.exe
+C:\Users\laysa\Documents\c#\lista1\ex20\bin\Debug\ex20.pdb
+C:\Users\laysa\Documents\c#\lista1\ex20\obj\Debug\ex20.csproj.AssemblyReference.cache
+C:\Users\laysa\Documents\c#\lista1\ex20\obj\Debug\ex20.csproj.SuggestedBindingRedirects.cache
+C:\Users\laysa\Documents\c#\lista1\ex20\obj\Debug\ex20.csproj.CoreCompileInputs.cache
+C:\Users\laysa\Documents\c#\lista1\ex20\obj\Debug\ex20.exe
+C:\Users\laysa\Documents\c#\lista1\ex20\obj\Debug\ex20.pdb

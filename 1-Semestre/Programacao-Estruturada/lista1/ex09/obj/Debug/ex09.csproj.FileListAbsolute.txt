@@ -1,0 +1,8 @@
+C:\Users\laysa\Documents\c#\lista1\ex09\bin\Debug\ex09.exe.config
+C:\Users\laysa\Documents\c#\lista1\ex09\bin\Debug\ex09.exe
+C:\Users\laysa\Documents\c#\lista1\ex09\bin\Debug\ex09.pdb
+C:\Users\laysa\Documents\c#\lista1\ex09\obj\Debug\ex09.csproj.AssemblyReference.cache
+C:\Users\laysa\Documents\c#\lista1\ex09\obj\Debug\ex09.csproj.SuggestedBindingRedirects.cache
+C:\Users\laysa\Documents\c#\lista1\ex09\obj\Debug\ex09.csproj.CoreCompileInputs.cache
+C:\Users\laysa\Documents\c#\lista1\ex09\obj\Debug\ex09.exe
+C:\Users\laysa\Documents\c#\lista1\ex09\obj\Debug\ex09.pdb
