@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>P2</title>
+        <script>
+            var botao = document.querySelector('button');
+
+            function AumentarTexto () {
+            texto = document.getElementById("texto");
+            //texto.style.fontSize = "100px";
+            
+            //botao.addEventListener("click", AumentarTexto);
+            // texto.addEventListener("click", AumentarTexto("100px"));
+            // texto.addEventListener("click", AumentarTexto);
+            botao.addEventListener("click", AumentarTexto);
+        }
+        </script>
+    </head>
+    <body>
+        <p id="texto">Vai Aumentar</p>
+        <button type="button" id="botao" onclick="AumentarTexto();">Aumentar texto</button>
+    </body>
+</html>

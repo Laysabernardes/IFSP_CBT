@@ -1,0 +1,25 @@
+# Arquivos de Sistema Operacional
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+
+# Dependências de projetos Node.js
+# Isso vai ignorar QUALQUER pasta node_modules em qualquer subdiretório
+node_modules/
+
+# Arquivos de build ou distribuição
+dist/
+build/
+out/
+
+# Arquivos de ambiente (MUITO IMPORTANTE ignorar)
+.env
+.env.*
+!.env.example
+
+# Pastas de configuração de Editores de Código
+.vscode/
+.idea/
