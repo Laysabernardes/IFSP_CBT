@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<!-- Laysa e Lucas -->
+<html lang="pt-br">
+<head>
+	<meta charset="ISO-8859-1">
+	<title>Adicionar Funcionário</title>
+	<style>
+		body {
+			font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+			background-color: #f0f4f8;
+			margin: 0;
+			padding: 0;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			min-height: 100vh;
+		}
+
+		.container {
+			background-color: #ffffff;
+			padding: 40px;
+			border-radius: 12px;
+			box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+			width: 100%;
+			max-width: 500px;
+			margin-top: 60px;
+		}
+
+		h1 {
+			text-align: center;
+			color: #333;
+			margin-bottom: 30px;
+		}
+
+		table {
+			width: 100%;
+			border-spacing: 15px;
+		}
+
+		td {
+			font-size: 16px;
+			color: #333;
+		}
+
+		input[type="text"],
+		input[type="password"],
+		input[type="email"],
+		select {
+			width: 100%;
+			padding: 10px;
+			border-radius: 5px;
+			border: 1px solid #ccc;
+			box-sizing: border-box;
+		}
+
+		input[type="submit"] {
+			background-color: #4CAF50;
+			color: white;
+			padding: 12px;
+			border: none;
+			border-radius: 5px;
+			width: 100%;
+			font-size: 16px;
+			cursor: pointer;
+			transition: background-color 0.3s;
+		}
+
+		input[type="submit"]:hover {
+			background-color: #45a049;
+		}
+
+		a {
+			display: block;
+			text-align: center;
+			margin-top: 20px;
+			color: #4CAF50;
+			text-decoration: none;
+			font-weight: bold;
+		}
+
+		a:hover {
+			text-decoration: underline;
+		}
+
+		.creditos-link {
+			margin-top: 20px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>Adicionar Novo Funcionário</h1>
+		<form action="SaveServlet" method="post">
+			<table>
+				<tr>
+					<td>Nome:</td>
+					<td><input type="text" name="name" required /></td>
+				</tr>
+				<tr>
+					<td>Senha:</td>
+					<td><input type="password" name="password" required /></td>
+				</tr>
+				<tr>
+					<td>Email:</td>
+					<td><input type="email" name="email" required /></td>
+				</tr>
+				<tr>
+					<td>País:</td>
+					<td>
+						<select name="country" required>
+							<option value="">Selecione</option>
+							<option>Brasil</option>
+							<option>Índia</option>
+							<option>EUA</option>
+							<option>Reino Unido</option>
+							<option>Outro</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2"><input type="submit" value="Salvar Funcionário" /></td>
+				</tr>
+			</table>
+		</form>
+		<a href="ViewServlet">Visualizar Funcionários</a>
+	</div>
+
+	<a href="creditos.html" class="creditos-link">Créditos</a>
+</body>
+</html>
