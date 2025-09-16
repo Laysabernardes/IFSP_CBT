@@ -1,0 +1,10 @@
+CREATE TABLE encomendas (
+    id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(50) NOT NULL,
+    email VARCHAR(50) NOT NULL,
+    telefone VARCHAR(20) NOT NULL,
+    cor VARCHAR(10),
+    mensagem TEXT NOT NULL,
+    newsletter ENUM('sim', 'não') NOT NULL,
+    data TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);

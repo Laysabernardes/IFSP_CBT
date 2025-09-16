@@ -1,0 +1,10 @@
+.footer{
+    background-color: #840032;
+    color: #ffffff;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    margin-top: 20px; 
+    text-align: center;
+    flex-shrink: 0; /* Impede que o rodapé encolha */ 
+}

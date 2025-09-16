@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Validação</title>
+  </head>
+
+  <body>
+
+    <div style="border: solid 2px blue;">
+
+      <header>
+        <section id="secao1">
+          <h1 style="text-align: center;">Validação de Formulários e Partes de um documento:</h1>
+          <hr>
+        </section>
+      </header>
+
+      <nav>
+        <ul>
+          <li><a href="#secao1">Home</a></li>
+          <li><a href="#secao2">Rodapé</a></li>
+        </ul>
+      </nav>
+
+    </div>
+
+    <article>
+      <form action="recebe-validacao.php" method="POST" enctype="multipart/form-data">
+
+        <fieldset>
+          <legend><h1>Formulário de Validação:</h1></legend>
+
+          <!--Botão de upload-->
+          <fieldset>
+            <legend>Botão de Upload:</legend>
+            <input id="upload" name="upload" type="file"><br><br>
+          </fieldset>
+
+          <!--Drop-down list tipo multiplique com optgroup e item pre-selecionado -->
+          <fieldset>
+            <legend>Opções:</legend>
+            <select id="dropdown" name="dropdown[]" multiple="multiple">
+              <optgroup label="Grupo 1">
+                <option value="opcao1">Opção 1</option>
+                <option value="opcao2" selected>Opção 2</option>
+                <option value="opcao3">Opção 3</option>
+              </optgroup>
+              <optgroup label="Grupo 2">
+                <option value="opcao4">Opção 4</option>
+                <option value="opcao5">Opção 5</option>
+              </optgroup>
+            </select><br><br>
+          </fieldset>
+
+          <!--datalist 1-->
+          <fieldset>
+            <legend>Campo 1:</legend>
+            <input type="text" id="campo1" name="campo1" list="datalist1"><br><br>
+            <datalist id="datalist1">
+              <option value="Opção 1">
+              <option value="Opção 2">
+              <option value="Opção 3">
+            </datalist>
+          </fieldset>
+
+          <!-- datalist 2-->
+          <fieldset>
+            <legend>Campo 2:</legend>
+            <input type="text" id="campo2" name="campo2" list="datalist2"><br><br>
+            <datalist id="datalist2">
+              <option value="Opção A">
+              <option value="Opção B">
+              <option value="Opção C">
+            </datalist>
+          </fieldset>
+
+          <!--Campo de Entrada de Maneira Desabilitada -->
+          <fieldset>
+            <legend>Campo desabilitado:</legend>
+            <input type="text" id="campo3" name="campo3" disabled><br><br>
+          </fieldset>
+
+          <!--Campo de Entrada de maneira apenas leitura -->
+          <fieldset>
+            <legend>Campo apenas leitura:</legend>
+            <input type="text" id="campo4" name="campo4" readonly><br><br>
+          </fieldset>
+
+          <!--Campo de Entrada Placa de carro -->
+          <fieldset>
+            <legend>Placa do Carro (AAA 1111):</legend>
+            <input type="text" id="placa" name="placa" pattern="[A-Z]{3} [0-9]{4}" placeholder="AAA 1111" title="As placas são formadas por 3 letras ou 4 números "><br><br>
+          </fieldset>
+
+          <!--Campo de Entrada de CEP -->
+          <fieldset>
+            <legend>CEP (11111-111):</legend>
+            <input type="text" id="cep" name="cep" pattern="[0-9]{5}-[0-9]{3}" placeholder="11111-111"><br><br>
+          </fieldset>
+
+          <fieldset>
+            <legend>Botão Enviar:</legend>
+            <input type="submit" value="Enviar">
+          </fieldset>
+
+          <fieldset>
+            <legend>Botão Limpar:</legend>
+            <input type="reset" value="Limpar">
+          </fieldset>
+
+        </fieldset>
+      </form>
+    </article>
+
+    <section id="secao2" style="border: solid 2px blue; margin-top: 10px;">
+      <footer>
+        <p>&nbsp;&nbsp;&nbsp;Atividade sobre Validação de Formulários e Partes de um documento</p>
+        <hr>
+        <p>&nbsp;&nbsp;&nbsp;Aluna: Laysa Bernardes Campos da Rocha - CB3024873 </p>
+      </footer>
+    </section>
+    </body>
+</html>
