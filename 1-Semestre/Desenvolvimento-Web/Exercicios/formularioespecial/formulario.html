@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Exercício de formulário com caixas específicas</title>
+	</head>
+
+<!-- Aluna: Laysa Bernardes CB3024873-->
+	<body>
+       <h1>Formulário Completo ♥</h1> 
+       <form action="recebe-formulario.php" method="post">
+
+       <!-- Nome --> 
+       <label for="nome_id">Nome: </label>
+	       <input
+				id="nome_id" 
+				type="text" 
+				name="nome"
+				placeholder="Insira seu nome."
+				required><br>
+        
+        <!-- E-mail -->
+        <label for="email_id">Email: </label>
+	        <input
+	            id="email_id" 
+	            type="email" 
+	            name="email"
+	            placeholder="Insira seu e-mail."
+	            required><br>
+
+        <!-- Telefone -->
+        <label for="telefone_id">Telefone: </label>
+	        <input
+	            id="telefone_id" 
+	            type="tel" 
+	            name="telefone"
+	            placeholder="Insira seu telefone."
+	            required><br>	
+
+        <!-- Site -->
+        <label for="site_id">Site: </label>
+	        <input 
+	            id="site_id" 
+	            type="url" 
+	            name="site"
+	            placeholder="Insira seu site/url."><br>
+
+        <!-- Data de Nascimetno -->
+        <label for="nascimento_id">Nascimento: </label>
+			<input 
+				id="nascimento_id" 
+				type="date" 
+				name="nascimento"
+				required><br>
+
+		<!-- Quantidade de Filho -->
+        <label for="filhos_id">Quantidade de Filhos: </label>
+			<input
+				id="filhos_id" 
+				type="number" 
+				name="filhos"
+				min="0"
+				max="30"
+				required><br>
+
+		<!-- Temperatura -->
+        <label for="temperatura_id">Temperatura: </label>
+			<input
+				id="temperatura_id" 
+				type="number" 
+				name="temperatura"
+				min="-10"
+				max="50"
+                step="0.1"
+                required><br>
+
+        <!-- Hora -->
+        <label for="hora_id">Hora local: </label>
+			<input 
+				id="hora_id" 
+				type="time" 
+				name="hora"
+				required><br>
+
+		<!-- Senha -->
+        <label for="senha_id">Senha: </label>
+			<input 
+				id="senha_id" 
+				type="password" 
+				name="senha"
+				placeholder="Insira sua senha."
+				required><br>
+
+		<!-- Escolha diciplina/radios -->
+
+        <h3>Qual a disciplina que você mais gosta?</h3>
+
+        <!-- opção: Lógica Computacional -->
+        <input id="lc_id" type="radio" value="Lógica Computacional" name="disciplinas">
+        <label for="lc_id">Lógica Computacional</label><br>
+
+        <!-- opção desenvolvimento web -->
+        <input id="dweb_id" type="radio" value="Desenvolvimento Web" name="disciplinas">
+        <label for="dweb_id">Desenvolvimento Web</label><br><br>
+		
+		<!-- Cor Preferida -->
+        <label for="cor_id">Cor Preferida: </label>
+		<input id="cor_id" name="cor" type="color"><br><br>
+
+		<!-- Mensagem -->
+        <label for="mensagem_id">Mensagem: </label><br>
+			<textarea 
+				id="mensagem_id" 
+				name="mensagem"
+				rows="5"
+				cols="50"
+				maxlength="150"
+                placeholder="Insira sua mensagem."
+                required
+            ></textarea><br>
+
+		<!-- newsletter-->
+        <input 
+        	id="cm_id" 
+        	type="checkbox" 
+        	value="sim" 
+        	name="newsletter" 
+        	checked>
+        		<label for="cm_id">Deixe a caixa marcada para receber nossos e-mails </label><br>
+       
+       <!-- parceiros -->
+        <input 
+        	id="ep_id" 
+        	type="checkbox" 
+        	value="sim" 
+        	name="parceiros">
+        		<label for="ep_id">Deseja receber e-mails de parceiros? </label><br>
+    
+    	<!-- Enviar -->
+        <input type="submit" value="Enviar">
+    </form>        

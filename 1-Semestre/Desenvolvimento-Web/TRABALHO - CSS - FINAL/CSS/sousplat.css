@@ -1,0 +1,118 @@
+.alinhar-sousplat{
+    display: flex;
+    align-items: center;
+}
+
+.h1-sousplat{
+    font-size: 60px;
+}
+.h2-sousplat {
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -.05rem;
+    font-size: 45px;
+}
+
+.span-sousplat{
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: -.05rem;
+    color: #840032;
+}
+
+.texto1{
+    margin: 15px 60px 15px 60px;
+    font-size: 20px;
+    text-align: center;
+}
+
+b{
+    color: #840032;
+    font-weight: 600;
+}
+
+/*BOTÕES*/
+.botao {
+    padding: 10px;
+    margin: 50px 5px 30px 5px;
+    background-color: white;
+    color: #840032;
+    text-decoration: none;
+    font-weight: 400;
+    border-radius: 15px;
+    border: 2px solid #840032;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    text-align: center;
+}
+  
+.botao:hover {
+    background-color: #840032;
+    color: white;
+    text-decoration: none;
+}
+  
+.botao:active {
+    background-color: #E59500;
+    color: white;
+    margin: 30px 5px 30px 5px;
+}
+
+.botao:visited {
+    background-color: #002642;
+    color:cadetblue;
+}
+  
+.centralizar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25px;
+    width:200px;
+    margin-left:40%;
+}
+
+/*PRODUTOS*/
+.produto-lista {
+    list-style: none;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+  
+.produto-item {
+    display: inline-block;
+    margin-right: 5px;  
+}
+
+.produto-item figure {
+    margin: 0;
+    text-align: left; 
+}
+  
+.produto-item a {
+    text-decoration: none;
+    padding: 15px;
+    margin-left: 15px;
+}
+  
+.produto-item img {
+    height: 300px;
+    width: auto;
+    border-radius: 15px;
+    margin: 5px;
+}
+.produto-item img:hover {
+    height: 300px;
+    width: auto;
+    border-radius: 15px;
+    border: solid 3px #840032;
+}
+
+.caixa{
+    background-color: bisque;
+    margin: 50px;
+    padding: 30px;
+    border-radius: 15px;
+}
+  
+  
+ 

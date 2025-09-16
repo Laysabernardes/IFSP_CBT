@@ -1,0 +1,33 @@
+.header-personalizado {
+    background-color: #E59500;
+    position:relative;
+    z-index: 9999;
+  }
+.nav-link{
+    color: black;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover{
+    color: #363636; 
+    font-weight: bold;
+    font-size: 115%;
+}
+
+.nav-link:active {
+    font-weight: bold; 
+    border-radius: 15px;
+    background-color: #840032; 
+}
+    
+.nav-link:visited {
+    color: #840032;
+    background-color:  #363636; 
+}
+    
+@media (max-width: 991px) {
+    .navbar-collapse.show {
+    overflow-y: auto;
+    max-height: calc(100vh - 60px); /* Ajuste a altura conforme necessário */
+  }
+}

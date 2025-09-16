@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    
+}
+
+.color{
+    background-color:rgb(255, 235, 211);
+}
+/*ELEMENTOS BASICOS*/
+h1{
+    margin: 15px;
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    color:#002642 ;
+}
+
+p{
+    text-align: justify;
+    font-size: 20px;
+    text-indent: 1cm;
+    line-height: 1.5;
+    font-weight: 300;
+}
+
+/*LINK*/
+.link-index{
+    text-decoration: none;
+    font-style: italic;
+    color: #840032;
+}
+
+/*CITAÇÃO*/
+.retangulo{
+    background-color: #eaeaea; /* Cor de fundo do retângulo */
+    padding: 40px 15px 0px 20px; /* Espaçamento interno do retângulo */
+    text-align: center;
+    border: dashed 2px #002642 ;
+    padding:20px;
+    box-shadow: 5px 5px 8px #002642;
+}
+  
+.retangulo:hover{
+    background-color: lightgray; /* Cor de fundo do retângulo */
+    padding: 40px 15px 0px 20px; /* Espaçamento interno do retângulo */
+    text-align: center;
+    border: dashed 2px #840032 ;
+    color:black;
+    padding:20px;
+}
+
+.citacao-index{
+    font-size: 30px;
+    color:#002642;
+}
+  
+.autorcitacao-index{
+    float:right; 
+    margin:5px; 
+    margin-right: 70px;
+    font-size: 18px;
+}
+
+/*IMAGENS */
+.image-borda {
+    margin: 20px;
+    width: 400px;
+    height: 400px;
+    display: block;
+    border: solid 3px #840032;
+}
+
+.image-borda2 {
+    margin: 20px;
+    width: 400px;
+    height: 400px;
+    display: block;
+    border: solid 3px #E59500;
+}
+  
+.image-container {
+    position: relative;
+  }
+  
+.image-card {
+    position: absolute;
+    bottom: 0;
+    left: 0%;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s ease;
+}
+  
+.image-container:hover .image-card {
+    height: 50px; /* Altura desejada do card */
+    background-color: #840032;
+    color: #fff;
+    padding: 5px;
+    font-size: 14px;
+}
+
+.image-card2 {
+    position: absolute;
+    bottom: 0;
+    left: 0%;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s ease;
+}
+  
+.image-container:hover .image-card2 {
+    height: 50px; /* Altura desejada do card */
+    background-color: #E59500;
+    color: #fff;
+    padding: 5px;
+    font-size: 14px;
+}
+
+/* Estilos para o conteúdo da página */
+.content {
+    flex: 1; /* Ocupa o espaço restante no corpo */
+}
+
+/*IMPORTAR HEADER E FOOTER*/
+.meu-iframe {
+    margin-bottom: 0;
+}
+
+/*SEPARAÇÃO EM DUAS COLUNAS*/
+.container {
+    position: relative;
+}
+.column1 {
+    position: relative;
+    float: left; /* Adicione esta propriedade */
+    width: 75%;
+    box-sizing: border-box;
+    padding: 0 20px;
+}
+
+.column2 {
+    float: right; /* Adicione esta propriedade */
+    width: calc(25% - 40px);
+    box-sizing: border-box;
+    padding: 0 20px;
+}
+
+@media (max-width: 768px) {
+    .column1,
+    .column2 {
+      position: static;
+      width: 100%;
+    }
+}
+
+/*QRCODE*/
+.qrcode img{
+    width: 150px;
+    border-radius: 30px;
+    align-items: center;
+    margin-left: 40px;
+}
+.fixa {
+    width: 75px;
+    position: fixed;
+    top: calc(100vh - 20%);
+    left: calc(100vh + 40%);
+  }
+/*IMAGEM FLUTUAÇÃO FIXA*/
+@media screen and (max-width: 1200px) {
+    .fixa {
+  width: 75px;
+  position: fixed;
+  top: calc(100vh - 20%);
+  left: calc(100vh + 25%);
+}
+}
+/* Estilos para telas menores */
+@media screen and (max-width: 768px) {
+  .fixa {
+    width: 50px;
+    top: calc(100vh - 15%);
+    left: calc(50% + 150px); /* Posiciona o objeto no centro horizontal da tela */
+  }
+}
+
+.professor{
+    margin: 60px;
+}
+
+/*Java Script - seta topo*/
+#btn-topo 
+{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #E59500;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+#btn-topo img 
+{
+  width: 30px;
+  height: 30px;
+  margin-top: 10px;
+}
+
+
+  
+ 

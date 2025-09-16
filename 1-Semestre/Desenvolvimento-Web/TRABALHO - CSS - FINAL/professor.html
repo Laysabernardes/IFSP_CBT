@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+
+    <link rel="shortcut icon" href="imagem/croche.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/sousplat.css">
+
+
+    <!-- Google tag (gtag.js) -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-68P5GZ19QK"></script>
+		<script>
+	  		window.dataLayer = window.dataLayer || [];
+	  		function gtag(){dataLayer.push(arguments);}
+	  		gtag('js', new Date());
+			gtag('config', 'G-68P5GZ19QK');
+	    </script>
+
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <title>Professor</title>
+</head>
+
+<body>
+    <header>
+        <iframe src="header.html" style="width: 100%;" frameborder="0" scrolling="no" id="meu-iframe"></iframe>
+    </header>
+    <div class="container professor">
+        <h2>Dados pessoais:</h2>
+            <div class="paragrafo">
+                <p><strong>Nome: </strong> Laysa Bernardes Campos Da Rocha</p>
+                <p><strong>Prontuário: </strong> CB 3024873</p>
+                <p><strong>Email: </strong>laysa.bernardes@aluno.ifsp.edu.br</p>
+            </div>
+            
+            <h2>Informações do site:</h2>
+                <p><strong>Palavras-chaves: </strong> sousplat de crochê,tapete de crochê, jogo de banheiro de crochê.</p>
+                <p><strong>Sitemap: </strong><a href="./sitemap.xml">Sitemap.xml</a>	</p>
+                <p><strong>Robots: </strong>
+                <a href="./robots.txt">robots.txt</a></p>
+                <p><strong>Relatório Analytics: </strong><a href="./googleAnalytics.pdf">googleAnalytics</a></p>
+    </div>
+
+    <button id="btn-topo">
+        <img src="imagem/seta3.png" alt="voltar ao topo" style="float:left; width:50px;height: 40px;">
+      </button>
+
+      <script>
+        var btnTopo = document.getElementById("btn-topo");
+        btnTopo.addEventListener("click", function() {
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+          });
+        });
+      </script>
+    </div>
+    <!--Footer-->
+    <iframe src="footer.html" style="width: 100%;" frameborder="0" scrolling="no" id="meu-iframe"></iframe>
+
+    <!-- Bootstrap scripts -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+        
+    </body>
+</html>
