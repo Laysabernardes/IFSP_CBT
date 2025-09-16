@@ -1,0 +1,121 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\laysa\\Documents\\ADS - 4\u00BA SEMESTRE\\ED2\\3_Cursos_MVC\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{574C31C8-45A5-438D-97E7-41F2D1DFE358}|3_Cursos_MVC.csproj|c:\\users\\laysa\\documents\\ads - 4\u00BA semestre\\ed2\\3_cursos_mvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{574C31C8-45A5-438D-97E7-41F2D1DFE358}|3_Cursos_MVC.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{574C31C8-45A5-438D-97E7-41F2D1DFE358}|3_Cursos_MVC.csproj|c:\\users\\laysa\\documents\\ads - 4\u00BA semestre\\ed2\\3_cursos_mvc\\curso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{574C31C8-45A5-438D-97E7-41F2D1DFE358}|3_Cursos_MVC.csproj|solutionrelative:curso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{574C31C8-45A5-438D-97E7-41F2D1DFE358}|3_Cursos_MVC.csproj|c:\\users\\laysa\\documents\\ads - 4\u00BA semestre\\ed2\\3_cursos_mvc\\escola.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{574C31C8-45A5-438D-97E7-41F2D1DFE358}|3_Cursos_MVC.csproj|solutionrelative:escola.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{574C31C8-45A5-438D-97E7-41F2D1DFE358}|3_Cursos_MVC.csproj|c:\\users\\laysa\\documents\\ads - 4\u00BA semestre\\ed2\\3_cursos_mvc\\aluno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{574C31C8-45A5-438D-97E7-41F2D1DFE358}|3_Cursos_MVC.csproj|solutionrelative:aluno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{574C31C8-45A5-438D-97E7-41F2D1DFE358}|3_Cursos_MVC.csproj|c:\\users\\laysa\\documents\\ads - 4\u00BA semestre\\ed2\\3_cursos_mvc\\disciplina.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{574C31C8-45A5-438D-97E7-41F2D1DFE358}|3_Cursos_MVC.csproj|solutionrelative:disciplina.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Escola.cs",
+              "DocumentMoniker": "C:\\Users\\laysa\\Documents\\ADS - 4\u00BA SEMESTRE\\ED2\\3_Cursos_MVC\\Escola.cs",
+              "RelativeDocumentMoniker": "Escola.cs",
+              "ToolTip": "C:\\Users\\laysa\\Documents\\ADS - 4\u00BA SEMESTRE\\ED2\\3_Cursos_MVC\\Escola.cs",
+              "RelativeToolTip": "Escola.cs",
+              "ViewState": "AgIAAE0AAAAAAAAAAAAcwFcAAABjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-21T20:14:06.67Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Curso.cs",
+              "DocumentMoniker": "C:\\Users\\laysa\\Documents\\ADS - 4\u00BA SEMESTRE\\ED2\\3_Cursos_MVC\\Curso.cs",
+              "RelativeDocumentMoniker": "Curso.cs",
+              "ToolTip": "C:\\Users\\laysa\\Documents\\ADS - 4\u00BA SEMESTRE\\ED2\\3_Cursos_MVC\\Curso.cs",
+              "RelativeToolTip": "Curso.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAIwDMAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-21T20:13:29.211Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Disciplina.cs",
+              "DocumentMoniker": "C:\\Users\\laysa\\Documents\\ADS - 4\u00BA SEMESTRE\\ED2\\3_Cursos_MVC\\Disciplina.cs",
+              "RelativeDocumentMoniker": "Disciplina.cs",
+              "ToolTip": "C:\\Users\\laysa\\Documents\\ADS - 4\u00BA SEMESTRE\\ED2\\3_Cursos_MVC\\Disciplina.cs",
+              "RelativeToolTip": "Disciplina.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAxwCgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-21T20:08:13.71Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Aluno.cs",
+              "DocumentMoniker": "C:\\Users\\laysa\\Documents\\ADS - 4\u00BA SEMESTRE\\ED2\\3_Cursos_MVC\\Aluno.cs",
+              "RelativeDocumentMoniker": "Aluno.cs",
+              "ToolTip": "C:\\Users\\laysa\\Documents\\ADS - 4\u00BA SEMESTRE\\ED2\\3_Cursos_MVC\\Aluno.cs",
+              "RelativeToolTip": "Aluno.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAACwAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-21T20:05:18.384Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\laysa\\Documents\\ADS - 4\u00BA SEMESTRE\\ED2\\3_Cursos_MVC\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\laysa\\Documents\\ADS - 4\u00BA SEMESTRE\\ED2\\3_Cursos_MVC\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAHEAAAAAAAAAAAAAABMBAABJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-21T19:48:37.995Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
